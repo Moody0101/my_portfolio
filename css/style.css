@@ -209,6 +209,7 @@ footer h1 i {
 @Media screen and (max-width: 777px) {
     .inner-section div {
         flex-direction: column;
+        Width: 100%;
     }
     .inner-section {
         height: 50vh;
@@ -261,9 +262,10 @@ footer h1 i {
     #menuTog {
         z-index: 1000;
         display: flex;
-        /* position: fixed; */
+        position: fixed;
         flex-direction: column;
         border: none;
+        outline: none;
         width: 40px;
         height: 80%;
         background: none;
