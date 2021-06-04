@@ -228,7 +228,6 @@ footer h1 i {
     }
     #navbar ul {
         margin: 5px;
-        position: fixed;
         background: hsl(253, 100%, 51%);
         height: 50vh;
         z-index: 999;
@@ -262,7 +261,6 @@ footer h1 i {
     #menuTog {
         z-index: 1000;
         display: flex;
-        position: fixed;
         flex-direction: column;
         border: none;
         outline: none;
