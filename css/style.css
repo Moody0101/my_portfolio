@@ -309,6 +309,9 @@ animation: hide 0.7s linear !important;
     }
 }
 
-
-/* @Media screen and (max-width: 400;
-) {} */
+@Media screen and (max-width: 400;
+) {
+    #navbar ul a {
+        margin-left: 10px;
+    }
+}
