@@ -104,6 +104,7 @@ a {
 .inner-section {
     width: 60vw;
     height: 64vh;
+    margin-top: 40px;
 }
 
 .inner-section div {
