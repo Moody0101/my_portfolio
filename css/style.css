@@ -48,6 +48,12 @@ body {
     background: rgb(44, 151, 44);
 }
 
+#navbar img {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
 #navbar ul li:nth-child(3):hover {
     transform: scale(1.01)
 }
