@@ -220,7 +220,7 @@ footer h1 i {
     }
     .inner-section {
         height: 50vh;
-        width: 90vw;
+        width: 100%;
         align-items: center;
         justify-content: center;
     }
