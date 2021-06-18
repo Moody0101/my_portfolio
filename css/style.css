@@ -93,9 +93,12 @@ a {
 /* hero section style */
 
 .inner-section {
-    width: 60vw;
+    width: 80vw;
     height: 64vh;
     margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    /* background: white; */
 }
 
 .inner-section div {
@@ -107,6 +110,7 @@ a {
 
 .inner-section div img {
     height: 300px;
+    border-radius: 10px;
 }
 
 .inner-section div div {
@@ -229,7 +233,7 @@ footer h1 i {
         display: none;
         -ms-transform-origin-y: 0;
         position: fixed;
-        animation: show .6s linear;
+        animation: show .5s linear;
         width: 50%;
         height: 400px;
         padding: 30px;
