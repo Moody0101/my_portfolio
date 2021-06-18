@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    transition: all 1s ease;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #292929;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body div {
+    width: 450px;
+    height: 50vh;
+    background-color: rgb(24, 29, 32);
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+p {
+    width: 60%;
+    padding: 7px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 550;
+    background: rgb(17, 16, 16);
+    color: white;
+    border-radius: 10px;
+}
+
+body div h2 {
+    color: white;
+    font-family: sans-serif;
+}
+
+body div h2 i {
+    color: rgb(32, 129, 32);
+}
+
+.showsocial:hover {
+    background: rgb(32, 29, 29);
+}
+
+.mode,
+.showsocial {
+    border: none;
+    outline: none;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    /* transition: all .6s ease-in-out; */
+}
+
+.showsocial {
+    padding: 7px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    position: relative;
+    transition: all 1s ease;
+}
+
+.showsocial {
+    margin-top: -30px;
+    color: white;
+    background: rgb(59, 52, 52);
+    border-radius: 50%;
+}
+
+.clicked {
+    transform: rotate(265deg);
+    margin-top: 30px;
+}
+
+.mode:hover {
+    background: white;
+    color: black;
+}
+
+body div section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.mode {
+    margin-left: auto;
+    background: white;
+    color: black;
+}
+
+.sm {
+    color: white;
+    width: 15vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: all 1s ease;
+    display: none;
+}
+
+.sm a {
+    color: white;
+    padding: auto;
+    margin: 10px;
+    text-decoration: none;
+    transition: color .4s ease-in-out;
+    height: 90px;
+}
+
+.sm a:hover {
+    color: #48dbfb;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:769px) {
+    body div {
+        width: 80vw;
+        height: 50vh;
+        background-color: rgb(24, 29, 32);
+        border-radius: 15px;
+        padding: 10px 20px;
+    }
+    body div h2 {
+        color: white;
+        font-family: sans-serif;
+    }
+    body div h2 i {
+        color: rgb(32, 129, 32);
+    }
+    /* p:nth-child(2) {
+margin-right: auto !important;
+} */
+}
