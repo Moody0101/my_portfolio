@@ -7,9 +7,9 @@ const nav = document.querySelector('#navbar ul')
 button.addEventListener('click', function() {
     if (bar.style.display == "") {
         bar.style.display = "flex";
-        button.className = "sticky";
+        button.classList.toggle("active")
     } else if (bar.style.display == "flex") {
         bar.style.display = "";
-        button.className = "";
+        button.classList.toggle("active")
     }
 });

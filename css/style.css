@@ -39,7 +39,7 @@ body {
     text-align: center;
     margin: 10px;
     border-radius: 10px;
-    min-width: 130px;
+    width: 130px;
     transition: background 1s ease;
 }
 
@@ -87,15 +87,6 @@ a {
 
 #menuTog {
     display: none;
-}
-
-.sticky {
-    background: rgb(64, 70, 64) !important;
-    border-radius: 100% !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 
@@ -240,31 +231,16 @@ footer h1 i {
         position: fixed;
         animation: show .6s linear;
         width: 50%;
-        height: 300px;
+        height: 400px;
+        padding: 30px;
         border-radius: 10px;
         top: 5px;
         right: 5px;
         flex-direction: column;
-        justify-content: space-around;
         align-items: center;
         margin: 0;
         z-index: 10000;
-        /* height: 25vh;
-z-index: 999;
-width: 50vw;
-display: none;
-border-top: 3px wheat solid;
-border-radius: 10px;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-animation: show 0.7s linear;
-transform-origin: 0 0;
-position: fixed; */
     }
-    /* .hide {
-animation: hide 0.7s linear !important;
-} */
     @keyframes show {
         from {
             width: 0;
@@ -276,7 +252,7 @@ animation: hide 0.7s linear !important;
         }
     }
     #navbar ul li {
-        width: 30%;
+        margin: auto;
     }
     #navbar ul li:nth-child(3) {
         background-color: #48515e;
@@ -288,25 +264,41 @@ animation: hide 0.7s linear !important;
     #menuTog {
         z-index: 100000;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
         flex-direction: column;
         border: none;
         outline: none;
         width: 40px;
-        height: 40px;
+        height: 50px;
         background: none;
         transition: transform 1s ease;
-        position: absolute;
-        top: 15px;
-        right: 15px;
+        position: relative;
+        margin-left: auto;
         box-sizing: border-box;
-        transition: border-radius 3s ease;
+        transition: all 3s ease-in-out;
+    }
+    #menuTog.active span:nth-child(2) {
+        transform: translateX(-50px);
+        background: transparent;
+    }
+    #menuTog.active span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+    #menuTog.active span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+    #menuTog.active span {
+        background-color: black;
+        position: fixed;
     }
     #menuTog span {
         background: rgb(255, 255, 255);
-        width: 100%;
+        width: 25px;
         height: 2px;
-        margin: 2px;
         transition: transform 1s ease;
+        margin: 2px;
     }
     .s2 {
         margin-top: 90px;

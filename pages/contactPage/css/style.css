@@ -104,13 +104,14 @@ body div section {
 
 .sm {
     color: white;
-    width: 15vw;
-    height: 20vh;
+    width: 45vw;
+    height: 15vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 10px;
+    padding: 7px;
     transition: all 1s ease;
     display: none;
 }
@@ -121,7 +122,7 @@ body div section {
     margin: 10px;
     text-decoration: none;
     transition: color .4s ease-in-out;
-    height: 90px;
+    font-size: 40px;
 }
 
 .sm a:hover {
