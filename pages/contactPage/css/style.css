@@ -137,7 +137,7 @@ body div section {
 @media screen and (max-width:769px) {
     body div {
         width: 80vw;
-        height: 50vh;
+        height: 30vh;
         background-color: rgb(24, 29, 32);
         border-radius: 15px;
         padding: 10px 20px;
