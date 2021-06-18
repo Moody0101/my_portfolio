@@ -137,7 +137,7 @@ body div section {
 @media screen and (max-width:769px) {
     body div {
         width: 80vw;
-        height: 30vh;
+        height: 50vh;
         background-color: rgb(24, 29, 32);
         border-radius: 15px;
         padding: 10px 20px;
@@ -148,6 +148,9 @@ body div section {
     }
     body div h2 i {
         color: rgb(32, 129, 32);
+    }
+    .sm {
+        width: 60vw;
     }
     /* p:nth-child(2) {
 margin-right: auto !important;
