@@ -1,7 +1,7 @@
 :root {
     --dark: black;
     --containers-color: #13171C;
-    --font-color: #48515e;
+    --font-color: #656e7a;
     --nav-buttons: var(--containers-color);
     --headers-font-color: #D2E4F9;
 }
@@ -127,6 +127,16 @@ a {
     margin: 10px;
 }
 
+.Logo {
+    height: 30px;
+    margin-right: auto;
+}
+
+.s section {
+    display: flex;
+    width: 100%;
+}
+
 .inner-section div p {
     background-color: var(--containers-color);
     font-weight: 600;
@@ -140,16 +150,19 @@ a {
     flex-direction: column;
     height: 70wh;
     justify-content: space-around;
+    border-radius: 6px;
     margin: 30px;
     padding: 30px 30px;
+    background-color: var(--containers-color);
 }
 
 .s2 h4 {
-    color: white;
-    margin: 30px auto;
-    background-color: var(--nav-buttons);
+    margin-right: auto;
+    background-color: white;
     padding: 10px 25px;
+    display: inline;
     border-radius: 20px;
+    color: black;
 }
 
 .s2 div {
