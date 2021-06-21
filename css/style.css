@@ -148,16 +148,17 @@ a {
 .s2 {
     display: flex;
     flex-direction: column;
-    height: 70wh;
-    justify-content: space-around;
+    height: 70vh;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
     border-radius: 6px;
-    margin: 30px;
+    margin: 30px auto;
     padding: 30px 30px;
     background-color: var(--containers-color);
 }
 
 .s2 h4 {
-    margin-right: auto;
     background-color: white;
     padding: 10px 25px;
     display: inline;
@@ -167,10 +168,11 @@ a {
 
 .s2 div {
     display: grid;
-    grid-template-columns: 1Fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 100px 100Px;
+    grid-template-rows: 100px 100px;
     grid-gap: 20px;
-    padding: 20px;
+    padding: 30px;
+    margin-top: 10px;
 }
 
 .s2 div img {
@@ -235,12 +237,6 @@ footer h1 i {
     .inner-section div img {
         display: none;
     }
-    .s2 div {
-        display: flex;
-        align-items: space-between;
-        flex-direction: column;
-        margin-top: 10px;
-    }
     #navbar ul {
         background: hsl(0, 0%, 100%);
         display: none;
@@ -277,6 +273,12 @@ footer h1 i {
     #navbar ul li:nth-child(3) a {
         color: white;
         font-weight: bold;
+    }
+    .s2 {
+        width: 100%;
+    }
+    .s2 h4 {
+        margin-top: 10px;
     }
     #menuTog {
         z-index: 100000;
