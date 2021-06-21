@@ -242,7 +242,7 @@ footer h1 i {
 
 /* media queries for responsiveness */
 
-@Media screen and (max-width: 777px) {
+@Media screen and (max-width: 768px) {
     .inner-section div {
         flex-direction: column;
         Width: 100%;
