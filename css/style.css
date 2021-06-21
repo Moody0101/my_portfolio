@@ -29,6 +29,8 @@ body {
     padding: 10px;
     align-items: center;
     justify-content: space-around;
+    padding-right: 20px;
+    background-color: transparent;
 }
 
 #navbar ul li {
@@ -37,7 +39,6 @@ body {
     background: var(--nav-buttons);
     padding: 7px 30px;
     text-align: center;
-    margin: 10px;
     border-radius: 10px;
     width: 130px;
     transition: background 1s ease;
@@ -49,9 +50,7 @@ body {
 }
 
 #navbar img {
-    position: absolute;
-    top: 12px;
-    left: 20px;
+    margin-right: auto;
 }
 
 #navbar ul li:nth-child(3):hover {
@@ -278,7 +277,7 @@ footer h1 i {
         width: 100%;
     }
     .s2 h4 {
-        margin-top: 10px;
+        margin-top: 5px;
     }
     #menuTog {
         z-index: 100000;
