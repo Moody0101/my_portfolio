@@ -273,6 +273,12 @@ footer h1 i {
         margin: 0;
         z-index: 10000;
     }
+    #let {
+        position: absolute;
+        top: 12px;
+        left: 38%;
+        width: 100px;
+    }
     @keyframes show {
         from {
             width: 0;
