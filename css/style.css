@@ -14,6 +14,8 @@
 body {
     margin: auto;
     max-width: 900px;
+    box-sizing: border-box;
+    font-family: sans-serif;
     display: flex;
     flex-direction: column;
     background-color: var(--dark);
@@ -162,63 +164,50 @@ a {
     padding: 10px 25px;
     display: inline;
     border-radius: 20px;
+    margin-top: 30px;
     color: black;
 }
 
 .s2 div {
     display: grid;
-    grid-template-columns: 100px 100Px;
-    grid-template-rows: 100px 100px;
-    grid-gap: 20px;
+    grid-template-columns: 100px 100Px 100px;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 30px;
     padding: 30px;
     margin-top: 10px;
+    padding-top: 10px;
 }
 
 .s2 div img {
-    max-height: 200px;
+    max-height: 70px;
+    margin: 10px;
 }
 
-
-/* footer {
-    box-sizing: border-box;
-    border-radius: 10px;
-    background: rgb(22, 4, 100);
-    display: flex;
-    margin: 0 auto;
-    flex-direction: row;
-    padding: 10px 20px;
-    justify-content: space-around;
-    align-items: center;
-    width: 80vw;
-    border-top: 3px rgb(124, 120, 143) solid;
-    margin-bottom: 10px;
-    height: 30vh;
+body h4 {
+    color: black;
+    margin: 10px auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: sans-serif;
 }
 
-footer a {
-    border: none;
-    font-weight: 600;
-    outline: none;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 30px;
-    transition: background .6s ease-out;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(30, 155, 30);
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    height: 120vh;
+    width: 50vw;
+    margin: auto;
+    padding: 10px;
 }
 
-footer a:hover {
-    background: black;
+.work img {
+    height: 300px;
+    margin: 20Px auto;
+    border-radius: 20%;
 }
-
-footer h1 {
-    color: whitesmoke;
-    padding: 30px;
-}
-
-footer h1 i {
-    color: rgb(30, 155, 30)
-} */
 
 #let {
     border: none;
@@ -236,7 +225,7 @@ footer h1 i {
 }
 
 #let:hover {
-    background: black;
+    background: rgb(48, 126, 48);
 }
 
 
@@ -349,6 +338,11 @@ footer h1 i {
     }
     #navbar ul li {
         margin: auto;
+    }
+    .work {
+        height: 210vh;
+        display: flex;
+        flex-direction: column;
     }
 }
 
