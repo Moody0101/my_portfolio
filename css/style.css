@@ -274,6 +274,30 @@ body h4 {
     display: none;
 }
 
+.active {
+    display: flex !important;
+}
+
+
+/* .disactive {
+    display: flex;
+} */
+
+.in,
+.copy {
+    position: relative;
+    border: none;
+    outline: none;
+}
+
+.copy {
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+    background: black;
+    transition: all .7s ease;
+}
+
 
 /* media queries for responsiveness */
 
