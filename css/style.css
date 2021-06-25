@@ -149,7 +149,7 @@ a {
 .s2 {
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 75vh;
     width: 50vw;
     justify-content: center;
     align-items: center;
@@ -181,6 +181,11 @@ a {
 .s2 div img {
     max-height: 70px;
     margin: 10px;
+}
+
+.s2 img {
+    max-height: 40px;
+    box-sizing: border-box;
 }
 
 body h4 {
@@ -230,47 +235,6 @@ body h4 {
 
 #let:focus {
     background: rgb(48, 126, 48);
-}
-
-#det {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-    width: 70%;
-    position: absolute;
-    top: 10vh;
-    left: 8vh;
-    height: 80px;
-    border-radius: 10px;
-    background-color: white;
-    transition: all .7 ease;
-    animation: active .7s ease;
-    display: none;
-}
-
-.active {
-    display: flex !important;
-}
-
-
-/* .disactive {
-    display: flex;
-} */
-
-.in,
-.copy {
-    position: relative;
-    border: none;
-    outline: none;
-}
-
-.copy {
-    padding: 5px;
-    border-radius: 4px;
-    color: rgb(94, 6, 6);
-    background: black;
-    transition: all .7s ease;
 }
 
 @keyframes active {
@@ -409,16 +373,45 @@ body h4 {
         display: flex;
         flex-direction: column;
     }
+    #det {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0;
+        width: 70%;
+        position: absolute;
+        top: 10vh;
+        left: 8vh;
+        height: 80px;
+        border-radius: 10px;
+        background-color: white;
+        transition: all .7 ease;
+        animation: active .7s ease;
+        display: none;
+    }
+    .active {
+        display: flex !important;
+    }
+    /* .disactive {
+        display: flex;
+    } */
+    .in,
+    .copy {
+        position: relative;
+        border: none;
+        outline: none;
+    }
+    .copy {
+        padding: 5px;
+        border-radius: 4px;
+        color: white;
+        background: black;
+        transition: all .7s ease;
+    }
 }
 
 @Media screen and (max-width: 400;
 ) {
-    #navbar ul a {
-        margin-left: 10px;
-    }
-}
-
-{
     #navbar ul a {
         margin-left: 10px;
     }
