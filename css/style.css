@@ -257,6 +257,23 @@ body h4 {
     }
 }
 
+#det {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    width: 70%;
+    position: absolute;
+    top: 10vh;
+    left: 8vh;
+    height: 80px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all .7 ease;
+    animation: active .7s ease;
+    display: none;
+}
+
 
 /* media queries for responsiveness */
 
@@ -279,7 +296,7 @@ body h4 {
         display: none;
         -ms-transform-origin-y: 0;
         position: fixed;
-        animation: show .5s linear;
+        animation: show 2s linear;
         width: 50%;
         height: 400px;
         padding: 30px;
@@ -299,15 +316,32 @@ body h4 {
     }
     @keyframes show {
         from {
-            width: 0;
+            height: 0;
+            opacity: 0;
         }
     }
-    @keyframes hide {
-        to {
-            width: 0;
+    @keyframes showLi {
+        0% {
+            opacity: 0;
+            transform: translateX(50px);
         }
     }
     #navbar ul li {
+        transition: transform, opacity calc(900ms * var(--order)) linear;
+    }
+    #navbar ul li:nth-child(1) {
+        animation: showLi 1s linear;
+        --order: 1;
+    }
+    #navbar ul li:nth-child(2) {
+        animation: showLi 2s linear;
+        --order: 2;
+    }
+    #navbar ul li:nth-child(3) {
+        animation: showLi 3s linear;
+        --order: 3;
+    }
+    /* #navbar ul li {
         margin: auto;
     }
     #navbar ul li:nth-child(3) {
@@ -316,7 +350,7 @@ body h4 {
     #navbar ul li:nth-child(3) a {
         color: white;
         font-weight: bold;
-    }
+    } */
     .s2 {
         width: 90vw;
     }
@@ -372,22 +406,6 @@ body h4 {
         height: 210vh;
         display: flex;
         flex-direction: column;
-    }
-    #det {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        padding: 10px 0;
-        width: 70%;
-        position: absolute;
-        top: 10vh;
-        left: 8vh;
-        height: 80px;
-        border-radius: 10px;
-        background-color: white;
-        transition: all .7 ease;
-        animation: active .7s ease;
-        display: none;
     }
     .active {
         display: flex !important;
