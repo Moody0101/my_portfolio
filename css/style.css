@@ -244,6 +244,7 @@ body h4 {
     height: 80px;
     border-radius: 10px;
     background-color: white;
+    transition: all .7 ease;
     animation: active .7s ease;
     display: none;
 }
@@ -267,8 +268,9 @@ body h4 {
 .copy {
     padding: 5px;
     border-radius: 4px;
-    color: white;
+    color: rgb(94, 6, 6);
     background: black;
+    transition: all .7s ease;
 }
 
 @keyframes active {

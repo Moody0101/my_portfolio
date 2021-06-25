@@ -4,8 +4,31 @@ const bar = document.getElementById('menu');
 const nav = document.querySelector('#navbar ul');
 const lets = document.getElementById("let");
 const details = document.getElementById("det");
+const copbtt = document.getElementsByClassName("copy");
+const inp = [
+    document.getElementById("inpt"),
+    document.getElementById("inpt2")
+];
 
 
+function copy(container, i) {
+    /* Get the text field */
+    // var copyText = document.getElementById("myInput");
+
+    /* Select the text field */
+    container.select();
+
+    container.setSelectionRange(0, 99999); /* For mobile devices */
+
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+    copbtt[i].value = "copied";
+    copbtt[i].style.background = "white";
+    copbtt[i].style.color = "black";
+
+    /* Alert the copied text */
+
+}
 button.addEventListener('click', function() {
     if (bar.style.display == "") {
         bar.style.display = "flex";
