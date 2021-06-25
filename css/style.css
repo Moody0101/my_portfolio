@@ -514,9 +514,8 @@ body footer div img {
     }
 }
 
-@Media screen and (max-width: 400;
-) {
-    #navbar ul a {
-        margin-left: 10px;
+@Media screen and (max-width: 500px) {
+    .work {
+        height: 200vh;
     }
 }
