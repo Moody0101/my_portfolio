@@ -1,0 +1,49 @@
+@keyframes active {
+    0% {
+        /* border-radius: 10px;
+        height: 0;
+        width: 0; */
+        top: 50px;
+        opacity: 0;
+    }
+}
+
+@keyframes deactive {
+    100% {
+        /* border-radius: 10px;
+        height: 0;
+        width: 0; */
+        top: 10px;
+        opacity: 0;
+    }
+}
+
+
+/* footer animation*/
+
+@keyframes border {
+    */ 0% {
+        border: 3px solid white;
+    }
+    50% {
+        border: 10px solid white;
+        border-radius: 100px;
+    }
+    100% {
+        border: 3px solid white;
+    }
+}
+
+@keyframes show {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes showLi {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}

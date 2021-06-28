@@ -1,0 +1,52 @@
+.inner-section {
+    width: 80vw;
+    height: 64vh;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    /* background: white; */
+}
+
+.inner-section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inner-section div img {
+    height: 300px;
+    border-radius: 10px;
+}
+
+.inner-section div div {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.inner-section div div p img {
+    height: 30px;
+    display: block;
+    margin-right: 10px;
+    margin: 10px;
+}
+
+.Logo {
+    height: 30px;
+    margin-right: auto;
+}
+
+.s section {
+    display: flex;
+    width: 100%;
+}
+
+.inner-section div p {
+    background-color: var(--containers-color);
+    font-weight: 600;
+    padding: 20px;
+    color: var(--font-color);
+    border-radius: 10px;
+}
