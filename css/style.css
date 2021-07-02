@@ -251,7 +251,7 @@ body {
         margin: auto;
     }
     .work {
-        height: 210vh;
+        height: 110vh;
         display: flex;
         flex-direction: column;
     }
@@ -273,11 +273,5 @@ body {
         color: white;
         background: black;
         transition: all .7s ease;
-    }
-}
-
-@Media screen and (max-width: 500px) {
-    .work {
-        height: 200vh;
     }
 }

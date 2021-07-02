@@ -10,6 +10,16 @@ const inp = [
     document.getElementById("inpt2")
 ];
 
+window.addEventListener('click', (e) => {
+    const round = document.createElement("div");
+    round.className = 'divanim';
+    round.style.top = `${e.pageY - 20}px`;
+    round.style.left = `${e.pageX - 20}px`;
+    document.body.appendChild(round);
+    setTimeout(() => {
+        round.remove();
+    }, 700);
+});
 
 function copy(container, i) {
     /* Get the text field */
@@ -56,15 +66,4 @@ lets.addEventListener("click", function() {
     //         details.style.animation = "deactive .7s ease";
     //         break;
     // }
-});
-
-window.addEventListener('click', (e) => {
-    const round = document.createElement("div");
-    round.className = 'divanim';
-    round.style.top = `${e.pageY - 20}px`;
-    round.style.left = `${e.pageX - 20}px`;
-    document.body.appendChild(round);
-    setTimeout(() => {
-        round.remove();
-    }, 700);
 });
