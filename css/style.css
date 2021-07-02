@@ -27,12 +27,6 @@ body {
     background-color: var(--dark);
 }
 
-
-/* navbar code */
-
-
-/* hero section style */
-
 .work {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -125,6 +119,19 @@ body {
 
 #music:hover {
     background-color: rgb(50, 204, 50);
+}
+
+.divanim {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    z-index: 999;
+    background-color: transparent;
+    transform: scale(0);
+    transform-origin: center;
+    animation: divClick .6s ease-in-out;
 }
 
 

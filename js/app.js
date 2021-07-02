@@ -57,3 +57,14 @@ lets.addEventListener("click", function() {
     //         break;
     // }
 });
+
+window.addEventListener('click', (e) => {
+    const round = document.createElement("div");
+    round.className = 'divanim';
+    round.style.top = `${e.pageY - 20}px`;
+    round.style.left = `${e.pageX - 20}px`;
+    document.body.appendChild(round);
+    setTimeout(() => {
+        round.remove();
+    }, 700);
+});

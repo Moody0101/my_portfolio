@@ -47,3 +47,18 @@
         transform: translateX(50px);
     }
 }
+
+@keyframes divClick {
+    0% {
+        transform: scale(0);
+        /* border: 1px; */
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
