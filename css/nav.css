@@ -12,18 +12,26 @@
 #navbar ul li {
     text-decoration: none;
     color: white;
-    background: var(--nav-buttons);
+    background-color: none;
     padding: 7px 30px;
     text-align: center;
-    border-radius: 10px;
     width: 130px;
-    transition: background 1s ease;
+    transition: all 1s ease-in-out;
 }
 
-#navbar ul li:nth-child(1):hover,
-#navbar ul li:nth-child(2):hover {
-    background: rgb(44, 151, 44);
+#navbar ul li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    z-index: 1000000;
 }
+
+#navbar ul li:nth-child(1):hover>,
+#navbar ul li:nth-child(2):hover {}
 
 #navbar img {
     margin-right: auto;
