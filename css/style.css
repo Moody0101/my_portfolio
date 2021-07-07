@@ -3,7 +3,6 @@
 @import 'skillsSection.css';
 @import 'animations.css';
 @import 'Footer.css';
-@import 'mobile.css' screen and (max-width: 768px);
 :root {
     --dark: black;
     --containers-color: #13171C;
