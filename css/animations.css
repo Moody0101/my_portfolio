@@ -34,10 +34,25 @@
     }
 }
 
-@keyframes show {
+@keyframes navshow {
     from {
-        height: 0;
+        top: 0;
+        right: 0;
+        border-radius: 0 0 400px 0;
         opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+@keyframes hidenav {
+    to {
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        opacity: 0;
+        width: 0;
+        height: 0;
     }
 }
 

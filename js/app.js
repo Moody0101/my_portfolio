@@ -39,37 +39,25 @@ function copy(container, i) {
     /* Alert the copied text */
 
 }
+nav.classList.toggle("hide", false);
 button.addEventListener('click', function() {
     if (bar.style.display == "") {
         bar.style.display = "flex";
-        button.classList.toggle("active")
+        button.classList.toggle("active");
+        nav.className = "";
     } else if (bar.style.display == "flex") {
         bar.style.display = "";
-        button.classList.toggle("active")
+        button.classList.toggle("active");
+        nav.className = "hide";
     }
+    // nav.classList.toggle('hide');
 });
-// var visible = false
 lets.addEventListener("click", function() {
-    // if (details.style.display == "") {
     details.classList.toggle("active");
-    //     visible = true;
-    // } else if (details.style.display == "flex") {
-    //     details.style.display = "flex";
-    //     visible = false;
-    // }
-    // switch (visible) {
-    //     case true:
-    //         details.style.animation = "active .7s ease";
-
-    //         break;
-    //     case false:
-    //         details.style.animation = "deactive .7s ease";
-    //         break;
-    // }
 });
 
 // scroll animation
-function scroll(Nodes, delay = 3000, origin = 'buttom') {
+function scroll(Nodes, delay = 3000, origin = 'bottom') {
     ScrollReveal().reveal(Nodes, {
         distance: '100%',
         origin: origin,
@@ -83,4 +71,6 @@ scroll(paragrahs, 7000, 'top');
 const section = document.querySelectorAll(".work img");
 scroll(section, 7000);
 const skills = document.querySelectorAll(".designs img");
-scroll(skills, 7000);
+scroll(skills, 9000);
+const footer = document.getElementsByTagName('footer');
+scroll(footer, 7000)
