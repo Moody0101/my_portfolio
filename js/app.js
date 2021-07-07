@@ -67,3 +67,20 @@ lets.addEventListener("click", function() {
     //         break;
     // }
 });
+
+// scroll animation
+function scroll(Nodes, delay = 3000, origin = 'buttom') {
+    ScrollReveal().reveal(Nodes, {
+        distance: '100%',
+        origin: origin,
+        opacity: 0,
+        DelayNode: delay,
+        reset: true
+    });
+}
+const paragrahs = document.querySelectorAll(".innerdiv p");
+scroll(paragrahs, 7000, 'top');
+const section = document.querySelectorAll(".work img");
+scroll(section, 7000);
+const skills = document.querySelectorAll(".designs img");
+scroll(skills, 7000);
