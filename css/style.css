@@ -172,6 +172,9 @@
             left: 38%;
             width: 100px;
         }
+        #navbar img {
+            display: block;
+        }
         #navbar ul li a {
             text-decoration: none;
             color: black;

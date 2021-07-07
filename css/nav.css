@@ -12,10 +12,15 @@
 #navbar ul li {
     text-decoration: none;
     border-radius: 10px;
-    padding: 7px 30px;
+    padding: 10px 30px;
     text-align: center;
-    width: 130px;
+    width: 100px;
+    height: 30px;
     transition: all 1s ease-in-out;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -24,38 +29,49 @@
     display: none;
 } */
 
-#navbar img {
-    margin-right: auto;
-}
-
-#navbar ul li:nth-child(3):hover {
-    transform: scale(1.01)
+#navbar>img {
+    margin-right: 10px;
+    height: 40px;
+    display: none;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 10px;
+    text-align: center;
 }
 
-#navbar ul li:nth-child(3) a {
+#navbar ul li:nth-child(2),
+#navbar ul li:nth-child(3) {
+    background: white;
+}
+
+#navbar ul li:nth-child(4) a {
     color: black;
     transition: color 1s ease;
 }
 
-#navbar ul li:nth-child(3) {
+#navbar ul li:nth-child(4) {
     background: #fff;
     transition: transform 0.4 ease;
 }
 
-#navbar img {
+#navbar ul li:nth-child(1) img {
+    height: 50Px;
+}
+
+#navbar+img {
     height: 40px;
+    display: none;
 }
 
 #navbar ul {
     list-style: none;
     display: flex;
-    width: 70%;
+    width: 80%;
+    height: 100%;
+    margin: auto auto;
     justify-content: space-between;
 }
 

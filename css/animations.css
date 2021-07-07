@@ -21,19 +21,6 @@
 
 /* footer animation*/
 
-@keyframes border {
-    */ 0% {
-        border: 3px solid white;
-    }
-    50% {
-        border: 10px solid white;
-        border-radius: 100px;
-    }
-    100% {
-        border: 3px solid white;
-    }
-}
-
 @keyframes navshow {
     from {
         top: 0;
