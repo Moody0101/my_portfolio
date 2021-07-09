@@ -70,6 +70,8 @@ const paragrahs = document.querySelectorAll(".innerdiv p");
 scroll(paragrahs, 7000, 'top');
 const section = document.querySelectorAll(".work img");
 scroll(section, 7000);
+const work = document.getElementsByClassName("work");
+scroll(work, 4000, 'top');
 const skills = document.querySelectorAll(".designs img");
 scroll(skills, 9000);
 const footer = document.getElementsByTagName('footer');

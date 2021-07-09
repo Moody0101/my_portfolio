@@ -11,7 +11,6 @@
 
 #navbar ul li {
     text-decoration: none;
-    border-radius: 10px;
     padding: 10px 30px;
     text-align: center;
     width: 100px;
@@ -21,6 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 }
 
 
@@ -37,24 +37,16 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 10px;
     text-align: center;
 }
 
 #navbar ul li:nth-child(2),
 #navbar ul li:nth-child(3) {
-    background: white;
-}
-
-#navbar ul li:nth-child(4) a {
-    color: black;
-    transition: color 1s ease;
-}
-
-#navbar ul li:nth-child(4) {
-    background: #fff;
-    transition: transform 0.4 ease;
+    background: none;
+    border-bottom: 1px blue solid;
+    cursor: pointer;
 }
 
 #navbar ul li:nth-child(1) img {
@@ -69,7 +61,7 @@ a {
 #navbar ul {
     list-style: none;
     display: flex;
-    width: 80%;
+    width: 90%;
     height: 100%;
     margin: auto auto;
     justify-content: space-between;
@@ -77,4 +69,9 @@ a {
 
 #menuTog {
     display: none;
+}
+
+#navbar ul li:nth-child(2):hover,
+#navbar ul li:nth-child(3):hover {
+    border-color: crimson;
 }
