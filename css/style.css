@@ -26,9 +26,13 @@ body {
     max-width: 900px;
     box-sizing: border-box;
     font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
+    display: flex4 flex-direction: column;
     background-color: var(--dark);
+    transition: all 1s linear;
+}
+
+body.ddark {
+    background-color: white !important;
 }
 
 .work {
@@ -193,13 +197,16 @@ body {
         transition: transform, opacity calc(900ms * var(--order)) linear;
     }
     #navbar ul li:nth-child(3),
-    #navbar ul li:nth-child(2) {
+    #navbar ul li:nth-child(4) {
         background: white !important;
     }
     #navbar ul li:nth-child(1) {
         --order: 1;
     }
-    #navbar ul li:nth-child(2) {
+    #navbar ul li:nth-child(1) svg {
+        width: 200px;
+    }
+    #navbar ul li:nth-child(4) {
         --order: 2;
     }
     #navbar ul li:nth-child(3) {

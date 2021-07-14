@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mode</title>
+    <style type="text/css">
+        * {
+            transition: all 1s ease-in-out;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        body svg {
+            width: 25vw;
+        }
+    </style>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 248">
+        <defs>
+        <style>.cls-1{
+            fill:#0d0200;
+            }
+            .cls-1.dark {
+                fill: white !important;
+            }
+            .cls-2{
+                fill:#fff;
+            }
+            .mode {
+                transform: translateX(53%);
+                transition: all 1s ease-in-out;
+            }
+            .mode2 {
+                transform: translateX(0);
+                transition: all 1s ease-in-out;
+            }
+        </style>
+        </defs>
+        <title>button</title>
+        <g id="Layer_2" data-name="Layer 2"><
+            <g id="Layer_1-2" data-name="Layer 1">
+        <g id="button">
+        <g id="rect">
+        <rect class="cls-1" id="rectt" width="552" height="248" rx="124"/>
+        </g>
+        <g id="circle">
+        <circle id="rounded"  class="cls-2" cx="127.5" cy="123.5" r="109.5"/>
+        </g>
+        </g>
+        </g>
+        </g>
+        </svg>
+    <script>
+        const body = document.getElementsByTagName("body")[0];
+        const mode = document.getElementById("rounded");
+        const rectan = document.getElementById('rectt');
+        mode.addEventListener('click', () => {
+            if (mode.style.fill == "") {
+                mode.style.fill = "black";
+                mode.classList.add('mode');
+                mode.classList.remove('mode2');
+                rectan.classList.toggle("dark");
+                body.classList.toggle("ddark");
+            } else if (mode.style.fill == "black") {
+                mode.style.fill = "";
+                mode.classList.remove('mode');
+                mode.classList.add('mode2');
+                rectan.classList.toggle("dark");
+                body.classList.toggle("ddark");
+            }
+
+
+        });
+    </script>
+</body>
+
+</html>

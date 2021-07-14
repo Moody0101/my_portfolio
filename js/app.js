@@ -76,3 +76,36 @@ const skills = document.querySelectorAll(".designs img");
 scroll(skills, 9000);
 const footer = document.getElementsByTagName('footer');
 scroll(footer, 7000)
+
+
+function lighten() {
+    /*
+    that function will be applied after clicking in an svg button:
+    requirements:
+        ==> making the svg from scratch <done>
+        ==> gettting every node that would be changed 
+        ==> change their properties to match a solid vibrant light theme
+        ==> requiring to the app.js script
+        ==> making svg.css animation hover.
+    */
+}
+const body = document.getElementsByTagName("body")[0];
+const mode = document.getElementById("rounded");
+const rectan = document.getElementById('rectt');
+mode.addEventListener('click', () => {
+    if (mode.style.fill == "") {
+        mode.style.fill = "white";
+        mode.classList.add('mode');
+        mode.classList.remove('mode2');
+        rectan.classList.toggle("dark");
+        body.classList.toggle("ddark");
+    } else if (mode.style.fill == "white") {
+        mode.style.fill = "";
+        mode.classList.remove('mode');
+        mode.classList.add('mode2');
+        rectan.classList.toggle("dark");
+        body.classList.toggle("ddark");
+    }
+
+
+});
