@@ -197,7 +197,7 @@ body.ddark {
         transition: transform, opacity calc(900ms * var(--order)) linear;
     }
     #navbar ul li:nth-child(3),
-    #navbar ul li:nth-child(4) {
+    #navbar ul li:nth-child(2) {
         background: white !important;
     }
     #navbar ul li:nth-child(1) {
@@ -206,7 +206,7 @@ body.ddark {
     #navbar ul li:nth-child(1) svg {
         width: 200px;
     }
-    #navbar ul li:nth-child(4) {
+    #navbar ul li:nth-child(2) {
         --order: 2;
     }
     #navbar ul li:nth-child(3) {
