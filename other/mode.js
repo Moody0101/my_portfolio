@@ -15,6 +15,4 @@ mode.addEventListener('click', () => {
         rectan.classList.toggle("dark");
         body.classList.toggle("ddark");
     }
-
-
 });

@@ -2,7 +2,7 @@ const button = document.getElementById("menuTog");
 const span = document.getElementsByTagName('span');
 const bar = document.getElementById('menu');
 const nav = document.querySelector('#navbar ul');
-const lets = document.getElementById("let");
+// const lets = document.getElementById("let");
 const details = document.getElementById("det");
 const copbtt = document.getElementsByClassName("copy");
 const inp = [
@@ -39,22 +39,22 @@ function copy(container, i) {
     /* Alert the copied text */
 
 }
-nav.classList.toggle("hide", false);
 button.addEventListener('click', function() {
+
     if (bar.style.display == "") {
         bar.style.display = "flex";
         button.classList.toggle("active");
-        nav.className = "";
-    } else if (bar.style.display == "flex") {
+        nav.classList.remove("hide");
+    } else if (!(bar.style.display == "")) {
         bar.style.display = "";
         button.classList.toggle("active");
-        nav.className = "hide";
+        nav.classList.add("hide");
     }
     // nav.classList.toggle('hide');
 });
-lets.addEventListener("click", function() {
-    details.classList.toggle("active");
-});
+// lets.addEventListener("click", function() {
+//     details.classList.toggle("active");
+// });
 
 // scroll animation
 function scroll(Nodes, delay = 3000, origin = 'bottom') {
