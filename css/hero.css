@@ -14,6 +14,7 @@
     justify-content: space-around;
     align-items: center;
     margin: auto 0;
+    box-sizing: border-box;
 }
 
 .inner-section div img {
@@ -53,4 +54,27 @@
     border-radius: 10px;
 }
 
-.inner-section div p:nth-child(1) strong {}
+.inner-section div p:nth-child(2) strong {
+    box-sizing: border-box;
+}
+
+.talk {
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: green;
+    border-radius: 10px;
+    margin: auto 100px;
+    cursor: pointer;
+    z-index: 100;
+    text-align: center;
+    transition: all .6s ease-in-out;
+    animation: click 1s infinite;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.talk:hover {
+    background: rgb(69, 172, 69);
+}

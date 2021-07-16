@@ -56,3 +56,15 @@
         border-bottom: 1px blue solid;
     }
 }
+
+@keyframes click {
+    0% {
+        background-color: green;
+    }
+    50% {
+        background-color: rgb(33, 161, 33);
+    }
+    100% {
+        background-color: green;
+    }
+}
