@@ -1,8 +1,5 @@
 @keyframes active {
     0% {
-        /* border-radius: 10px;
-        height: 0;
-        width: 0; */
         top: 50px;
         opacity: 0;
     }
@@ -21,44 +18,41 @@
 
 /* footer animation*/
 
-@keyframes navshow {
-    from {
-        top: 0;
-        right: 0;
-        border-radius: 0 0 400px 0;
-        opacity: 0;
+@keyframes show {
+    0% {
         width: 0;
-        height: 0;
+        opacity: 0;
+    }
+    25% {
+        width: 70vh;
+    }
+    75% {
+        width: 60vh;
+    }
+    100% {
+        width: 100vw;
     }
 }
 
-@keyframes hidenav {
+@keyframes hide {
     from {
-        width: 100%;
+        width: 100vw;
+        opacity: 1;
     }
     to {
         width: 0;
-    }
-}
-
-@keyframes showLi {
-    0% {
         opacity: 0;
-        transform: translateX(50px);
     }
 }
 
-@keyframes divClick {
+@keyframes colorSwitch {
     0% {
-        transform: scale(0);
-        /* border: 1px; */
+        border-bottom: 1px blue solid;
     }
     50% {
-        transform: scale(1);
-        opacity: 1;
+        border-bottom: 1px crimson solid;
     }
     100% {
-        transform: scale(0);
-        opacity: 0;
+        border-bottom: 1px blue solid;
     }
 }

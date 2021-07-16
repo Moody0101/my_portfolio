@@ -1,15 +1,14 @@
 footer {
     border-bottom: 2px rgb(0, 10, 200) solid;
-    width: 80%;
+    width: 100%;
     height: 30vh;
-    margin: 30px auto 0 auto;
     background-color: whitesmoke;
     border-radius: 20px 20px 0 0;
     box-sizing: border-box;
-    padding: 10px;
     display: flex;
     justify-self: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 footer ul {
@@ -17,7 +16,7 @@ footer ul {
     list-style: none;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 100%;
 }
 

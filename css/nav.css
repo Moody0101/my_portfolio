@@ -1,3 +1,4 @@
+@import './animations.css';
 #navbar {
     display: flex;
     flex-direction: row;
@@ -30,8 +31,8 @@
 } */
 
 #navbar>img {
-    margin-right: 10px;
-    height: 40px;
+    margin-right: auto;
+    height: 30px;
     display: none;
 }
 
@@ -45,12 +46,20 @@ a {
 #navbar ul li:nth-child(2),
 #navbar ul li:nth-child(3) {
     background: none;
-    border-bottom: 1px blue solid;
     cursor: pointer;
+    transform: all 1s ease;
+    animation: colorSwitch 2.5s infinite;
+}
+
+#navbar ul li:nth-child(1) {
+    margin-left: 0;
+    /* background-color: yellow; */
+    width: 30px;
 }
 
 #navbar ul li:nth-child(1) img {
-    height: 50Px;
+    height: 30px;
+    margin-left: auto;
 }
 
 #navbar+img {
@@ -69,9 +78,4 @@ a {
 
 #menuTog {
     display: none;
-}
-
-#navbar ul li:nth-child(2):hover,
-#navbar ul li:nth-child(3):hover {
-    border-color: crimson;
 }

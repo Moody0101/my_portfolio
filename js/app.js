@@ -44,17 +44,14 @@ button.addEventListener('click', function() {
     if (bar.style.display == "") {
         bar.style.display = "flex";
         button.classList.toggle("active");
-        nav.classList.remove("hide");
+        bar.classList.toggle("hide")
     } else if (!(bar.style.display == "")) {
         bar.style.display = "";
         button.classList.toggle("active");
-        nav.classList.add("hide");
+        bar.classList.toggle("hide")
     }
-    // nav.classList.toggle('hide');
+
 });
-// lets.addEventListener("click", function() {
-//     details.classList.toggle("active");
-// });
 
 // scroll animation
 function scroll(Nodes, delay = 3000, origin = 'bottom') {

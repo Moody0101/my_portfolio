@@ -31,10 +31,6 @@ required stylesheet, the media query also included.
         transition: all 1s linear;
     }
     
-    body.ddark {
-        background-color: white !important;
-    }
-    
     .work {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -49,20 +45,21 @@ required stylesheet, the media query also included.
     .work img {
         height: 300px;
         margin: 20Px auto;
+        transition: transform 2s linear;
         border-radius: 20%;
     }
     
     #let {
         border: none;
         font-weight: 600;
-        width: 10vw;
+        width: 100px;
         outline: none;
         color: #fff;
         padding: 10px 20px;
         border-radius: 30px;
-        transition: background .6s ease-out;
+        transition: all .6s ease-out;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: rgb(30, 155, 30);
+        background: rgb(30, 155, 30);
         display: block;
         cursor: pointer;
         margin: 10px auto;
@@ -77,57 +74,12 @@ required stylesheet, the media query also included.
         background: rgb(48, 126, 48);
     }
     
-    #det {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        padding: 10px 0;
-        width: 70%;
-        position: absolute;
-        top: 10vh;
-        left: 8vh;
-        height: 80px;
-        border-radius: 10px;
-        background-color: white;
-        transition: all .7 ease;
-        animation: active .7s ease;
-        display: none;
-    }
-    
     .active {
         display: flex !important;
     }
     /* .disactive {
-    display: flex;
+display: flex;
 } */
-    
-    .in,
-    .copy {
-        position: relative;
-        border: none;
-        outline: none;
-    }
-    
-    .copy {
-        padding: 5px;
-        border-radius: 4px;
-        color: white;
-        background: black;
-        transition: all .7s ease;
-    }
-    
-    #music {
-        border: none;
-        background-color: rgb(30, 155, 30);
-        color: white;
-        padding: 4px 10px;
-        border-radius: 10px;
-        transition: background-color .5s ease;
-    }
-    
-    #music:hover {
-        background-color: rgb(50, 204, 50);
-    }
     
     .divanim {
         width: 40px;
@@ -158,31 +110,32 @@ required stylesheet, the media query also included.
             display: none;
         }
         #navbar ul {
-            background: rgba(0, 0, 0, 0.4);
-            -ms-transform-origin-y: 0;
+            background: black;
             position: fixed;
             display: flex;
             width: 100vw;
+            visibility: hidden;
             height: 100vh;
             padding: 30px;
             border-radius: 10px;
             top: 0;
             right: 0;
+            transition: all 1s ease;
             flex-direction: column;
             align-items: center;
             margin: 0;
             z-index: 1000;
-            animation: navshow 1s linear;
-            visibility: hidden;
+            animation: hide 1s ease-in-out;
         }
-        .hide {
-            animation: hidenav 2s linear !important;
+        ul.hide {
+            animation: show 1s linear !important;
+            visibility: visible !important;
         }
         #let {
             position: absolute;
             top: 10px;
             left: 32%;
-            width: 150px;
+            width: 120px;
             height: 40px;
         }
         #navbar img {
@@ -190,18 +143,19 @@ required stylesheet, the media query also included.
         }
         #navbar ul li a {
             text-decoration: none;
-            color: black;
+            color: white;
             padding: 10px;
         }
         #navbar ul li {
-            transition: transform, opacity calc(900ms * var(--order)) linear;
+            transition: border .4s ease-in-out;
         }
         #navbar ul li:nth-child(3),
         #navbar ul li:nth-child(2) {
-            background: white !important;
+            background: none;
+            font-size: 1.2em;
         }
         #navbar ul li:nth-child(1) {
-            --order: 1;
+            display: none;
         }
         #navbar ul li:nth-child(1) svg {
             width: 200px;
@@ -212,16 +166,6 @@ required stylesheet, the media query also included.
         #navbar ul li:nth-child(3) {
             --order: 3;
         }
-        /* #navbar ul li {
-        margin: auto;
-    }
-    #navbar ul li:nth-child(3) {
-        background-color: #48515e;
-    }
-    #navbar ul li:nth-child(3) a {
-        color: white;
-        font-weight: bold;
-    } */
         .s2 {
             width: 90vw;
         }
@@ -238,12 +182,12 @@ required stylesheet, the media query also included.
             border: none;
             outline: none;
             width: 40px;
-            height: 50px;
+            height: 55px;
             background: transparent;
             position: relative;
             margin-left: auto;
             box-sizing: border-box;
-            transition: all 1s ease-in-out;
+            transition: all .2s ease;
         }
         #menuTog.active span:nth-child(2) {
             transform: translateX(-50px);
@@ -281,20 +225,10 @@ required stylesheet, the media query also included.
             display: flex !important;
             visibility: visible;
         }
-        /* .disactive {
-        display: flex;
-    } */
-        .in,
-        .copy {
-            position: relative;
-            border: none;
-            outline: none;
-        }
-        .copy {
-            padding: 5px;
-            border-radius: 4px;
-            color: white;
-            background: black;
-            transition: all .7s ease;
+    }
+    
+    @media screen and (max-width:567px) {
+        .work {
+            height: 170vh;
         }
     }
