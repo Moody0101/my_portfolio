@@ -53,7 +53,7 @@ button.addEventListener('click', function() {
 });
 
 // scroll animation
-function scroll(Nodes, delay = 3000, origin = 'bottom') {
+function scroll(Nodes, delay, origin = 'bottom') {
     ScrollReveal().reveal(Nodes, {
         distance: '70%',
         origin: origin,
@@ -67,4 +67,11 @@ scroll(paragrahs, 10000, 'top');
 const skills = document.querySelectorAll(".designs img");
 const git = document.getElementById("lastIm");
 scroll(git, 10000, 'left');
-scroll(skills, 10000);
+scroll(skills, 10000, 'top');
+
+// 3d effect
+
+VanillaTilt.init(document.querySelectorAll(".cont"), {
+    max: 16,
+    speed: 10,
+});
