@@ -55,7 +55,7 @@ button.addEventListener('click', function() {
 // scroll animation
 function scroll(Nodes, delay, origin = 'bottom') {
     ScrollReveal().reveal(Nodes, {
-        distance: '70%',
+        distance: '10%',
         origin: origin,
         opacity: 0,
         DelayNode: delay,
@@ -66,8 +66,8 @@ const paragrahs = document.querySelectorAll(".innerdiv p");
 scroll(paragrahs, 10000, 'top');
 const skills = document.querySelectorAll(".designs img");
 const git = document.getElementById("lastIm");
-scroll(git, 10000, 'left');
-scroll(skills, 10000, 'top');
+scroll(git, 12000, 'left');
+scroll(skills, 12000, 'right');
 
 // 3d effect
 
