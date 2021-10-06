@@ -1,0 +1,47 @@
+
+    
+body .skills {
+	margin: 10px auto;
+	padding:  10px;
+	border-radius:  10px;
+	background: var(--containers-color);
+	display: flex;
+	width: 50vw;
+	height: 400px;
+	justify-content: center;
+	/* align-items: center; */
+	flex-direction: column;
+}
+body .skills h4 {
+	align-self: center;
+	color:  white;
+}
+.designs {
+	align-self: center;
+	display:  grid;
+	grid-gap: 3px;
+	width: 90%;
+	height: 60%;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+}
+.designs img, #lastIm {
+	margin: auto auto;
+	width:  40%;
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#lastIm {
+	margin-top:  10px;
+	width:  20%;
+}
+
+@media screen and (max-width: 500px) {
+	body .skills {
+		height: 250px;
+		width: 70vw;
+	}
+}
+

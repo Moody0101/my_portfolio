@@ -48,7 +48,12 @@ a {
     background: none;
     cursor: pointer;
     transform: all 1s ease;
-    animation: colorSwitch 2.5s infinite;
+    transition: font-size .3s ease;
+    /* animation: colorSwitch 2.5s infinite; */
+}
+#navbar ul li:nth-child(2):hover,
+#navbar ul li:nth-child(3):hover {
+    font-size: 1.3em;
 }
 
 #navbar ul li:nth-child(1) {

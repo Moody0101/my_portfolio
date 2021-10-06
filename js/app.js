@@ -50,13 +50,12 @@ button.addEventListener('click', function() {
         button.classList.toggle("active");
         bar.classList.toggle("hide")
     }
-
 });
 
 // scroll animation
 function scroll(Nodes, delay = 3000, origin = 'bottom') {
     ScrollReveal().reveal(Nodes, {
-        distance: '100%',
+        distance: '70%',
         origin: origin,
         opacity: 0,
         DelayNode: delay,
@@ -64,25 +63,8 @@ function scroll(Nodes, delay = 3000, origin = 'bottom') {
     });
 }
 const paragrahs = document.querySelectorAll(".innerdiv p");
-scroll(paragrahs, 7000, 'top');
-const section = document.querySelectorAll(".work img");
-scroll(section, 7000);
-const work = document.getElementsByClassName("work");
-scroll(work, 4000, 'top');
+scroll(paragrahs, 10000, 'top');
 const skills = document.querySelectorAll(".designs img");
-scroll(skills, 9000);
-const footer = document.getElementsByTagName('footer');
-scroll(footer, 7000)
-
-
-function lighten() {
-    /*
-    that function will be applied after clicking in an svg button:
-    requirements:
-        ==> making the svg from scratch <done>
-        ==> gettting every node that would be changed 
-        ==> change their properties to match a solid vibrant light theme
-        ==> requiring to the app.js script
-        ==> making svg.css animation hover.
-    */
-}
+const git = document.getElementById("lastIm");
+scroll(git, 10000, 'left');
+scroll(skills, 10000);

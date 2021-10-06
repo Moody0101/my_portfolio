@@ -1,1 +1,1 @@
-## This is like my first good portfolio :)
+## This is like my first good portfolio after months of coding:)

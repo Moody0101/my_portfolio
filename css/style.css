@@ -5,9 +5,8 @@ required stylesheet, the media query also included.
     
     @import 'nav.css';
     @import 'hero.css';
-    @import 'skillsSection.css';
     @import 'animations.css';
-    @import 'Footer.css';
+    @import 'skills.css';
      :root {
         --dark: black;
         --containers-color: #13171C;
@@ -22,31 +21,13 @@ required stylesheet, the media query also included.
     }
     
     body {
-        margin: auto;
+        margin: auto auto;
         max-width: 900px;
-        box-sizing: border-box;
         font-family: sans-serif;
-        display: flex4 flex-direction: column;
-        background-color: var(--dark);
+        display: flex;
+        flex-direction: column;
+        background-color: black;
         transition: all 1s linear;
-    }
-    
-    .work {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 10px;
-        height: 120vh;
-        width: 50vw;
-        margin: auto;
-        padding: 10px;
-    }
-    
-    .work img {
-        height: 300px;
-        margin: 20Px auto;
-        transition: transform 2s linear;
-        border-radius: 20%;
     }
     
     .ative {
@@ -67,10 +48,14 @@ required stylesheet, the media query also included.
     }
     /* media queries for responsiveness */
     
-    @Media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
+        .inner-section div div {
+            
+            width: 90vw;
+        }
         .inner-section div {
             flex-direction: column;
-            Width: 100%;
+            width: 100%;
         }
         .inner-section {
             height: 50vh;
@@ -131,12 +116,7 @@ required stylesheet, the media query also included.
         #navbar ul li:nth-child(3) {
             --order: 3;
         }
-        .s2 {
-            width: 90vw;
-        }
-        .s2 h4 {
-            margin-top: 5px;
-        }
+        
         #menuTog {
             z-index: 100000;
             display: flex;
@@ -175,16 +155,8 @@ required stylesheet, the media query also included.
             transition: all 1s ease;
             margin: 2px;
         }
-        .s2 {
-            margin-top: 90px;
-        }
         #navbar ul li {
             margin: auto;
-        }
-        .work {
-            height: 210vh;
-            display: flex;
-            flex-direction: column;
         }
         .active {
             display: flex !important;
@@ -192,8 +164,3 @@ required stylesheet, the media query also included.
         }
     }
     
-    @media screen and (max-width:567px) {
-        .work {
-            height: 170vh;
-        }
-    }
