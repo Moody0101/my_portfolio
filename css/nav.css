@@ -102,10 +102,11 @@ a {
             align-items: center;
             margin: 0;
             z-index: 1000;
-            animation: hide 1s ease-in-out;
+            animation: hide 1s ease;
+            transform-origin: right;
         }
         ul.hide {
-            animation: show 1s linear !important;
+            animation: show 1s ease !important;
             visibility: visible !important;
         }
         #navbar img {
@@ -141,7 +142,7 @@ a {
             z-index: 100000;
             display: flex;
             justify-content: center;
-            align-items: center;
+            /* align-items: center; */
             cursor: pointer;
             flex-direction: column;
             border: none;
@@ -151,35 +152,46 @@ a {
             background: transparent;
             position: relative;
             margin-left: auto;
-            box-sizing: border-box;
+            /* box-sizing: border-box; */
             transition: all .2s ease;
+        }
+       /*  #menuTog:hover ~ span {
+            width: 25px;
+        }
+ */      #menuTog span {
+            background: white;
+            height: 2px;
+            margin: 2px;
+            transition: all .2s ease;
+
+        }
+        #menuTog span:nth-child(1) {
+            width:  10px;
+        }
+         #menuTog span:nth-child(2) {
+            width: 20px;
+        }
+         #menuTog span:nth-child(3) {
+            width: 25px;
+            
         }
         #menuTog.active span:nth-child(2) {
             transform: translateX(-50px);
             background: transparent;
+            width: 25px;
         }
         #menuTog.active span:nth-child(1) {
-            transform: rotate(45deg);
+            transform: translateY(6px) rotate(45deg);
+            width: 25px;
         }
         #menuTog.active span:nth-child(3) {
-            transform: rotate(-45deg);
+            transform: translateY(-6px) rotate(-45deg);
+
         }
-        #menuTog.active span {
-            background-color: white;
-            position: fixed;
-        }
-        #menuTog span {
-            background: white;
-            width: 25px;
-            height: 2px;
-            transition: all 1s ease;
-            margin: 2px;
-        }
+        
         #navbar ul li {
             margin: auto;
         }
-        .active {
-            display: flex !important;
-            visibility: visible;
-        }
+       
+
 }

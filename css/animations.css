@@ -18,23 +18,22 @@
 
 @keyframes show {
     0% {
-        width: 0;
+        transform: scaleX(0);
         opacity: 0;
-        border-radius: 100%;
     }
     100% {
-        width: 100vw;
-        border-radius: 0;
+        transform: scaleX(1);
+        opacity: 1;
     }
 }
 
 @keyframes hide {
-    from {
-        width: 100vw;
+    0% {
+        transform: scaleX(1);
         opacity: 1;
     }
-    to {
-        width: 0;
+    100% {
+        transform: scaleX(0);
         opacity: 0;
     }
 }

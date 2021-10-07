@@ -37,7 +37,6 @@ function copy(container, i) {
     copbtt[i].style.color = "black";
 
     /* Alert the copied text */
-
 }
 button.addEventListener('click', function() {
 
@@ -48,7 +47,7 @@ button.addEventListener('click', function() {
     } else if (!(bar.style.display == "")) {
         bar.style.display = "";
         button.classList.toggle("active");
-        bar.classList.toggle("hide")
+        bar.classList.toggle("hide");
     }
 });
 
