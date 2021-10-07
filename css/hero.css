@@ -101,11 +101,10 @@
 }
 @media screen and (max-width: 500px) {
     .s1 {
-        height: 80vh;
-    }
-
-    .inner-section {
         height: 60vh;
+    }
+    .inner-section {
+        height: 50vh;
         width: 100%;
         /* background: red; */
     }
