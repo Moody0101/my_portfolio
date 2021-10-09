@@ -3,7 +3,7 @@
  }
 
 
- body {
+ #loading {
  	margin:  0;
  	padding:  0;
  	height: 100vh;
@@ -25,7 +25,7 @@
  	flex-direction: column;
 
 }
-body .container img {
+#loading .container img {
 	width:  40px;
 }
 .load {
@@ -44,19 +44,27 @@ body .container img {
     left: 0;
     background: red;
     transition: height, width 1s ease;
-    animation: loading 2s ease infinite;
+    animation: loading 4s ease infinite;
 }
 @keyframes loading {
 	0% {
 		width:  0%;
 		
 	}
+	25% {
+		width:  25%;
+	}
 		50% {
-		width:  100%;
-		
+		width:  60%;
+	}
+	75% {
+		width:  60%;
+	}
+	90% {
+		width: 100%
 	}
 		100% {
-		width:  0%;
+		width:  100%;
 		
 	}
 }

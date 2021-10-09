@@ -7,6 +7,7 @@ required stylesheet, the media query also included.
     @import 'hero.css';
     @import 'animations.css';
     @import 'skills.css';
+    @import 'load.css';
      :root {
         --dark: black;
         --containers-color: #13171C;
@@ -18,6 +19,7 @@ required stylesheet, the media query also included.
     * {
         box-sizing: border-box;
         font-family: sans-serif;
+        
     }
     
     body {

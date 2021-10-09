@@ -110,3 +110,14 @@
     }
 
 }
+@media screen and (max-width: 414px) {
+    .s1 {
+        height: 60vh;
+    }
+    .inner-section {
+        height: 60vh;
+        width: 100%;
+        /* background: red; */
+    }
+
+}

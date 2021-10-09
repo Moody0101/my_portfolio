@@ -2,42 +2,20 @@ const button = document.getElementById("menuTog");
 const span = document.getElementsByTagName('span');
 const bar = document.getElementById('menu');
 const nav = document.querySelector('#navbar ul');
-// const lets = document.getElementById("let");
-const details = document.getElementById("det");
-const copbtt = document.getElementsByClassName("copy");
-const inp = [
-    document.getElementById("inpt"),
-    document.getElementById("inpt2")
-];
+const skills = document.querySelectorAll(".designs img");
+const paragrahs = document.querySelectorAll(".innerdiv p");
+const git = document.getElementById("lastIm");
+var containernodes = [document.getElementById("section1"), document.getElementById("Skillsec")]
+const loadingdiv = document.getElementsByClassName("container");
+const loading = document.getElementById("loading");
 
-window.addEventListener('click', (e) => {
-    const round = document.createElement("div");
-    round.className = 'divanim';
-    round.style.top = `${e.pageY - 20}px`;
-    round.style.left = `${e.pageX - 20}px`;
-    document.body.appendChild(round);
-    setTimeout(() => {
-        round.remove();
-    }, 700);
-});
 
-function copy(container, i) {
-    /* Get the text field */
-    // var copyText = document.getElementById("myInput");
 
-    /* Select the text field */
-    container.select();
-
-    container.setSelectionRange(0, 99999); /* For mobile devices */
-
-    /* Copy the text inside the text field */
-    document.execCommand("copy");
-    copbtt[i].value = "copied";
-    copbtt[i].style.background = "white";
-    copbtt[i].style.color = "black";
-
-    /* Alert the copied text */
+for(let i=0; i < containernodes.length; i++) {
+    containernodes[i].style.display = "none"
 }
+
+// the nav button
 button.addEventListener('click', function() {
 
     if (bar.style.display == "") {
@@ -51,7 +29,8 @@ button.addEventListener('click', function() {
     }
 });
 
-// scroll animation
+// scroll animation code 
+
 function scroll(Nodes, delay, origin = 'bottom') {
     ScrollReveal().reveal(Nodes, {
         distance: '10%',
@@ -61,16 +40,26 @@ function scroll(Nodes, delay, origin = 'bottom') {
         reset: true
     });
 }
-const paragrahs = document.querySelectorAll(".innerdiv p");
+
 scroll(paragrahs, 10000, 'top');
-const skills = document.querySelectorAll(".designs img");
-const git = document.getElementById("lastIm");
 scroll(git, 12000, 'left');
 scroll(skills, 12000, 'right');
 
-// 3d effect
+// 3d effect in the hero section using vanilla tilt library
 
 VanillaTilt.init(document.querySelectorAll(".cont"), {
     max: 16,
     speed: 10,
 });
+
+// loading animation
+
+
+setTimeout(() => {
+    loadingdiv[0].style.display = "none";
+    loading.style.display = "none";
+    for(let i=0; i < containernodes.length; i++) {
+    containernodes[i].style.display = "";
+    containernodes[i].style.transition = "1s all ease";
+    }
+}, 4050);
