@@ -152,7 +152,14 @@ body div section {
     .sm {
         width: 60vw;
     }
-    /* p:nth-child(2) {
-margin-right: auto !important;
-} */
+
+}
+
+@media screen and (max-width: 500px) {
+
+   
+}
+@media screen and (max-width: 414px) {
+    
+
 }

@@ -12,7 +12,7 @@ const loading = document.getElementById("loading");
 
 
 for(let i=0; i < containernodes.length; i++) {
-    containernodes[i].style.display = "none"
+    containernodes[i].style.visibility = "hidden"
 }
 
 // the nav button
@@ -59,7 +59,7 @@ setTimeout(() => {
     loadingdiv[0].style.display = "none";
     loading.style.display = "none";
     for(let i=0; i < containernodes.length; i++) {
-    containernodes[i].style.display = "";
+    containernodes[i].style.visibility = "";
     containernodes[i].style.transition = "1s all ease";
     }
 }, 4050);
