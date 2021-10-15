@@ -11,7 +11,7 @@ const about = document.querySelectorAll("#about .text p span");
 const aboutimg = document.querySelectorAll("#about .text img");
 
 for(let i=0; i < containernodes.length; i++) {
-    containernodes[i].style.display = "none"
+    containernodes[i].style.display = "none";
 }
 
 // the nav button
@@ -27,19 +27,17 @@ button.addEventListener('click', function() {
 
 // scroll animation code 
 
-function scroll(Nodes, delay, origin = 'bottom') {
+function scroll(Nodes, delay, origin = 'bottom', MOBILE = false) {
     ScrollReveal().reveal(Nodes, {
         distance: '10%',
         origin: origin,
         opacity: 0,
         DelayNode: delay,
-        reset: true
+        reset: true,
     });
 }
 
-scroll(paragrahs, 10000, 'top');
-scroll(git, 12000, 'left');
-scroll(skills, 12000, 'right');
+
 scroll(about, 12000);
 scroll(aboutimg, 12000);
 
@@ -60,4 +58,4 @@ setTimeout(() => {
     containernodes[i].style.display = "";
     containernodes[i].style.transition = "1s all ease";
 }
-}, 4050);
+}, 4000);
