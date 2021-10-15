@@ -4,15 +4,14 @@ const nav = document.querySelector('#navbar ul');
 const skills = document.querySelectorAll(".designs img");
 const paragrahs = document.querySelectorAll(".innerdiv p");
 const git = document.getElementById("lastIm");
-var containernodes = document.querySelectorAll("section");
+const containernodes = document.getElementsByTagName("section");
 const loadingdiv = document.getElementsByClassName("container");
 const loading = document.getElementById("loading");
 const about = document.querySelectorAll("#about .text p span");
 const aboutimg = document.querySelectorAll("#about .text img");
 
 for(let i=0; i < containernodes.length; i++) {
-    containernodes[i].style.width = 0;
-    containernodes[i].style.visibility = "hidden"
+    containernodes[i].style.display = "none"
 }
 
 // the nav button
@@ -58,9 +57,7 @@ setTimeout(() => {
     loadingdiv[0].style.display = "none";
     loading.style.display = "none";
     for(let i=0; i < containernodes.length; i++) {
-    containernodes[i].style.visibility = "";
+    containernodes[i].style.display = "";
     containernodes[i].style.transition = "1s all ease";
-    containernodes[i].style.width = "";
-
-    }
+}
 }, 4050);
