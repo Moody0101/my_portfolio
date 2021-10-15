@@ -8,8 +8,8 @@ const git = document.getElementById("lastIm");
 var containernodes = document.querySelectorAll("section");
 const loadingdiv = document.getElementsByClassName("container");
 const loading = document.getElementById("loading");
-
-
+const about = document.querySelectorAll("#about .text p span");
+const aboutimg = document.querySelectorAll("#about .text img");
 
 for(let i=0; i < containernodes.length; i++) {
     containernodes[i].style.width = 0;
@@ -45,6 +45,8 @@ function scroll(Nodes, delay, origin = 'bottom') {
 scroll(paragrahs, 10000, 'top');
 scroll(git, 12000, 'left');
 scroll(skills, 12000, 'right');
+scroll(about, 12000);
+scroll(aboutimg, 12000);
 
 // 3d effect in the hero section using vanilla tilt library
 
