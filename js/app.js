@@ -18,15 +18,13 @@ for(let i=0; i < containernodes.length; i++) {
 
 // the nav button
 button.addEventListener('click', function() {
+    bar.classList.toggle("hide");
+    button.classList.toggle("active");
 
     if (bar.style.display == "") {
         bar.style.display = "flex";
-        button.classList.toggle("active");
-        bar.classList.toggle("hide")
     } else if (!(bar.style.display == "")) {
         bar.style.display = "";
-        button.classList.toggle("active");
-        bar.classList.toggle("hide");
     }
 });
 

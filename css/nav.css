@@ -102,19 +102,18 @@ a {
             visibility: hidden;
             height: 100vh;
             padding: 30px;
-            border-radius: 10px;
             top: 0;
             right: 0;
-            transition: all 1s ease;
+            transition: all .2s ease;
             flex-direction: column;
             align-items: center;
             margin: 0;
             z-index: 1000;
-            animation: hide 1s ease;
-            transform-origin: right;
+            animation: hide .2s ease;
+            /* transform-origin: right; */
         }
         ul.hide {
-            animation: show 1s ease !important;
+            animation: show .2s ease !important;
             visibility: visible !important;
         }
         #navbar img {
@@ -162,8 +161,7 @@ a {
             margin-left: auto;
             /* box-sizing: border-box; */
             transition: all .2s ease;
-            position:  fixed;
-            
+            position:  fixed; 
             right: 10px;
         }
          #menuTog span {
@@ -190,10 +188,12 @@ a {
         #menuTog.active span:nth-child(1) {
             transform: translateY(6px) rotate(45deg);
             width: 25px;
+            background: !important black;
+
         }
         #menuTog.active span:nth-child(3) {
             transform: translateY(-6px) rotate(-45deg);
-
+            /* background: !important black; */
         }
 
 }
