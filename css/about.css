@@ -1,0 +1,61 @@
+
+
+#about {
+	width: 70vw;
+	height: 60vh;
+	display:  flex;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+}
+
+
+#about .text {
+	display:  flex;
+	justify-content: space-around;
+	flex-direction: row;
+	width: 100%;
+	padding:  10px;
+}
+
+
+#about .text img {
+	width:  150px;
+}
+
+
+#about .text p {
+	width: 300px;
+	color: white;
+}
+
+
+#about .text p span {
+
+	display:  block;
+	margin: 3px;
+}
+
+
+/* desktop */
+
+
+ /* phone */
+@media screen and (max-width: 700px) {
+
+#about  {
+
+	width:  80vw;
+	height: 80vh ;
+	margin: auto auto;
+}
+
+
+#about .text {
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-direction:  column;
+}
+}

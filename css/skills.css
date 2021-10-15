@@ -5,11 +5,12 @@ body .skills {
 	border-radius:  10px;
 	background: var(--containers-color);
 	display: flex;
-	width: 50vw;
+	width: 40vw;
 	height: 400px;
 	justify-content: center;
 	/* align-items: center; */
 	flex-direction: column;
+	transform-origin: top;
 }
 body .skills h4 {
 	align-self: center;
@@ -39,8 +40,8 @@ body .skills h4 {
 
 @media screen and (max-width: 500px) {
 	body .skills {
-		height: 250px;
-		width: 70vw;
+		height: 350px;
+		width: 60vw;
 	}
 }
 

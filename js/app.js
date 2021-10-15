@@ -5,13 +5,14 @@ const nav = document.querySelector('#navbar ul');
 const skills = document.querySelectorAll(".designs img");
 const paragrahs = document.querySelectorAll(".innerdiv p");
 const git = document.getElementById("lastIm");
-var containernodes = [document.getElementById("section1"), document.getElementById("Skillsec")]
+var containernodes = document.querySelectorAll("section");
 const loadingdiv = document.getElementsByClassName("container");
 const loading = document.getElementById("loading");
 
 
 
 for(let i=0; i < containernodes.length; i++) {
+    containernodes[i].style.width = 0;
     containernodes[i].style.visibility = "hidden"
 }
 
@@ -61,5 +62,7 @@ setTimeout(() => {
     for(let i=0; i < containernodes.length; i++) {
     containernodes[i].style.visibility = "";
     containernodes[i].style.transition = "1s all ease";
+    containernodes[i].style.width = "";
+
     }
 }, 4050);
