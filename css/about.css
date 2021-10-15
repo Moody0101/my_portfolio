@@ -1,12 +1,15 @@
 
 
 #about {
-	width: 70vw;
+	width: 100vh;
 	height: 60vh;
 	display:  flex;
 	align-items: center;
+	justify-content: center;
 	flex-direction: column;
 	color: white;
+	margin: auto auto;
+	
 }
 
 
@@ -16,6 +19,7 @@
 	flex-direction: row;
 	width: 100%;
 	padding:  10px;
+
 }
 
 
@@ -33,7 +37,7 @@
 #about .text p span {
 
 	display:  block;
-	margin: 3px;
+	margin: 10px 3px;
 }
 
 

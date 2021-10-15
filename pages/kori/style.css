@@ -1,6 +1,6 @@
 * {
 	color:  white;
-	font-family: sans-serif;
+	font-family: "Myriad Pro", sans-serif;
 	box-sizing: border-box;
 
 }
@@ -11,21 +11,26 @@ a {
 body {
 	padding:  0;
 	margin: 0;
-	background: black;
+	background: #191919;
 	height: 100vh;
 	width:  100vw;
 	display: flex;
 	justify-content:  center;
 	align-items: center;
+	flex-direction: column;
 }
 
+body a {
+	margin:  10px;
+	padding: 10px 15px !important;
+}
 .container {
-	background: rgb(3, 2, 10);
+	background: #19195A;
 	width: 500px;
 	padding:  10px;
 	display: flex;
 	border-radius: 10px;
-	border: 0.5px solid white;
+	/* border: 0.5px solid white; */
 	justify-content:  space-between;
 	align-items: center;
 	/* height: 90px; */
@@ -33,17 +38,17 @@ body {
 .container h4 {
 	margin-left:30px;
 }
-.download {
-	background: white;
-	color:  black;
-	padding:  4px;
-	border-radius:  5px;
-	transition: 1s all ease;
-	margin-right:30px;
-}
-.download:hover {
+.download, body a {
 	background: black;
 	color:  white;
+	padding:  4px;
+	border-radius:  5px;
+	transition: .2s all ease;
+	margin-right:30px;
+}
+.download:hover, body a:hover {
+	background: white;
+	color:  black;
 }
 
 /* desktop */
