@@ -1,5 +1,4 @@
 const button = document.getElementById("menuTog");
-const span = document.getElementsByTagName('span');
 const bar = document.getElementById('menu');
 const nav = document.querySelector('#navbar ul');
 const skills = document.querySelectorAll(".designs img");
@@ -20,7 +19,6 @@ for(let i=0; i < containernodes.length; i++) {
 button.addEventListener('click', function() {
     bar.classList.toggle("hide");
     button.classList.toggle("active");
-
     if (bar.style.display == "") {
         bar.style.display = "flex";
     } else if (!(bar.style.display == "")) {
