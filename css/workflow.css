@@ -1,0 +1,20 @@
+.workflow {
+	display: flex;
+	justify-content:  space-around;
+	align-items: center;
+	margin: 20px auto;
+	width: 70vw;
+	flex-direction: column;
+	/* background: red; */
+	padding: 10px;
+}
+.workflow h4 {
+	color:  #fff;
+}
+
+
+@media screen and (min-width: 700px) {
+ .workflow > #workflowIMG {
+	width:  500px;
+	}
+}

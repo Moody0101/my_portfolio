@@ -3,54 +3,57 @@ this file contains the standars, and also import every
 required stylesheet, the media query also included.
 */
     
-    @import 'nav.css';
-    @import 'hero.css';
-    @import 'animations.css';
-    @import 'skills.css';
-    @import 'load.css';
-    @import 'about.css';
-  :root {
-        --dark: black;
-        --containers-color: #13171C;
-        --font-color: #656e7a;
-        --nav-buttons: var(--containers-color);
-        --headers-font-color: #D2E4F9;
-    }
+@import url('../js/frameworks/sal.js/dist/sal.css');
+@import 'nav.css';
+@import 'hero.css';
+@import 'animations.css';
+@import 'skills.css';
+@import 'load.css';
+@import 'about.css';
+@import 'workflow.css';
+
+:root {
+    --dark: black;
+    --containers-color: #13171C;
+    --font-color: #656e7a;
+    --nav-buttons: var(--containers-color);
+    --headers-font-color: #D2E4F9;
+}
+
+* {
+    box-sizing: border-box;
+ font-family: "Myriad Pro", sans-serif;
     
-    * {
-        box-sizing: border-box;
-     font-family: "Myriad Pro", sans-serif;
-        
-    }
-    
-    body {
-        margin: auto auto;
-        max-width: 900px;
-        font-family: sans-serif;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        background-color: black;
-        transition: all 1s linear;
-    }
-    
-    .ative {
-        display: flex !important;
-    }
-    
-    .divanim {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        border: 2px solid white;
-        position: absolute;
-        z-index: 999;
-        background-color: transparent;
-        transform: scale(0);
-        transform-origin: center;
-        animation: divClick .6s ease-in-out;
-    }
-    
+}
+
+body {
+    margin: auto auto;
+    max-width: 900px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: black;
+    transition: all 1s linear;
+}
+
+.ative {
+    display: flex !important;
+}
+
+.divanim {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    z-index: 999;
+    background-color: transparent;
+    transform: scale(0);
+    transform-origin: center;
+    animation: divClick .6s ease-in-out;
+}
+
 
 
 .lastbtt {
