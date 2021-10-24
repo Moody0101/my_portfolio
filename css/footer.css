@@ -1,0 +1,18 @@
+footer {
+	width: 70vw;
+	height: 30px;
+	background: none;
+	color:  white;
+	text-align: center;
+	margin: 10px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	border: 2px solid red;
+}
+@media screen and (min-width: 700px) {
+ footer {
+	width:  200px;
+}
+}

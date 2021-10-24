@@ -11,6 +11,8 @@ required stylesheet, the media query also included.
 @import 'load.css';
 @import 'about.css';
 @import 'workflow.css';
+@import 'footer.css';
+
 
 :root {
     --dark: black;
