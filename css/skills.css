@@ -6,7 +6,7 @@ body .skills {
 	background: var(--containers-color);
 	display: flex;
 	width: 40vw;
-	height: 400px;
+	height: 500px;
 	justify-content: center;
 	/* align-items: center; */
 	flex-direction: column;
