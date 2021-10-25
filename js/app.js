@@ -22,14 +22,14 @@ const containers = [
 ];
 for(let i=0; i < containers.length;i++) {
     containers[i].setAttribute('data-sal', "slide-down");
-    containers[i].setAttribute('data-sal-delay', "500");
     containers[i].setAttribute('data-sal-repeat', null);
+    containers[i].setAttribute('data-sal-delay', "500");
     containers[i].setAttribute('data-sal-easing', "ease");      
 }
-var animation = sal({
+sal({
     once: false,
     threshold: 0.3
-})
+});
 button.addEventListener('click', function() {
 
     bar.classList.toggle("hide");
@@ -42,7 +42,6 @@ button.addEventListener('click', function() {
     }
 
 });
-
 
 // 3d effect in the hero section using vanilla tilt library
 

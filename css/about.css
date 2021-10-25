@@ -25,8 +25,11 @@
 
 #about .text img {
 	width:  150px;
+	transition: all .3s ease-in-out;
 }
-
+#about .text img:hover {
+	transform: scale(1.09);
+}
 
 #about .text p {
 	width: 300px;

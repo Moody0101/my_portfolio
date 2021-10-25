@@ -3,7 +3,7 @@
  }
 
 
- #loading {
+#loading {
  	margin:  0;
  	padding:  0;
  	position: absolute;
@@ -28,6 +28,13 @@
  	/* background: white; */
  	flex-direction: column;
 
+}
+.container h2 {
+	color:  #191919;
+	font-family: "Myriad Pro", sans-serif;
+	font-weight: 300;
+	text-align: center;
+	transition: color 0.5s ease;
 }
 #loading .container img {
 	width:  40px;
@@ -55,23 +62,32 @@
 		width:  0%;
 		
 	}
+	10% {
+		background: blue;
+	}
 	25% {
 		width:  25%;
+		background: blue;
 	}
 		50% {
 		width:  60%;
+		background: white;	
 	}
 	75% {
 		width:  60%;
+		background: white;
 	}
 	90% {
-		width: 100%
+		width: 90%;
 	}
 		100% {
+		background: white;
 		width:  100%;
 		
 	}
 }
+
+
 @media screen and (max-width: 789px) {
 	body .load {
  		width: 50vw;

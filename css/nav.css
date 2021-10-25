@@ -118,6 +118,9 @@ a {
         }
         #navbar img {
             display: block;
+            padding: 3px 0 3px 0;
+        
+            width: 60px;
         }
         #navbar ul li a {
             text-decoration: none;
@@ -127,16 +130,14 @@ a {
         #navbar ul li {
             transition: border .4s ease-in-out;
         }
+        #navbar ul li:nth-child(1) {
+            display: none;
+        }
+
         #navbar ul li:nth-child(3),
         #navbar ul li:nth-child(2) {
             background: none;
             font-size: 1.2em;
-        }
-        #navbar ul li:nth-child(1) {
-            display: none;
-        }
-        #navbar ul li:nth-child(1) svg {
-            width: 200px;
         }
         #navbar ul li:nth-child(2) {
             --order: 2;
