@@ -31,6 +31,7 @@ sal({
     threshold: 0.3
 });
 button.addEventListener('click', function() {
+    document.querySelector("#navbar ul ul").classList.toggle("hide");
 
     bar.classList.toggle("hide");
     button.classList.toggle("active");

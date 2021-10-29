@@ -1,4 +1,5 @@
 @import './animations.css';
+
 #navbar {
     display: flex;
     flex-direction: row;
@@ -10,25 +11,21 @@
     background-color: transparent;
 }
 
+#navbar ul ul li,
 #navbar ul li {
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 10px 0;
     text-align: center;
-    width: 200px;
+    width: 100px;
     height: 30px;
     transition: all 1s ease-in-out;
-    margin: 20px auto;
+    margin: 20px 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 100;
 }
 
-
-/* #navbar ul li:nth-child(1):hover,
-#navbar ul li:nth-child(2):hover {
-    display: none;
-} */
 
 #navbar>img {
     margin-right: auto;
@@ -39,31 +36,33 @@
 a {
     text-decoration: none;
     color: white;
-    padding: 10px;
     text-align: center;
 }
-#navbar ul li:nth-child(2) a {
+
+#navbar ul ul li:nth-child(1) a {
     color: lightblue;
 }
-#navbar ul li:nth-child(2),
-#navbar ul li:nth-child(3),
-#navbar ul li:nth-child(4),
-#navbar ul li:nth-child(5) {
+
+#navbar ul ul li:nth-child(1),
+#navbar ul ul li:nth-child(2),
+#navbar ul ul li:nth-child(3),
+#navbar ul ul li:nth-child(4) {
     background: none;
     cursor: pointer;
     transform: all 1s ease;
     transition: font-size .3s ease;
-    /* animation: colorSwitch 2.5s infinite; */
+
 }
-#navbar ul li:nth-child(2):hover,
-#navbar ul li:nth-child(3):hover,
-#navbar ul li:nth-child(4):hover,
-#navbar ul li:nth-child(5):hover {
+
+#navbar ul ul li:nth-child(1):hover,
+#navbar ul ul li:nth-child(2):hover,
+#navbar ul ul li:nth-child(3):hover,
+#navbar ul ul li:nth-child(4):hover {
     font-size: 1.3em;
     color: lightblue;
 }
 
-#navbar ul li:nth-child(1) {
+#navbar ul ul li:nth-child(1) {
     margin-left: 0;
     /* background-color: yellow; */
     width: 30px;
@@ -82,10 +81,16 @@ a {
 #navbar ul {
     list-style: none;
     display: flex;
-    width: 90%;
+    width: 81%;
     height: 100%;
     margin: auto auto;
     justify-content: space-between;
+}
+
+#navbar ul ul {
+    width: 50%;
+
+    margin-right: 75px;
 }
 
 #menuTog {
@@ -94,107 +99,130 @@ a {
 
 @media screen and (max-width: 789px) {
     #navbar ul {
-            background: black;
-            position: fixed;
-            display: flex;
-            justify-content: center;
-            width: 100vw;
-            visibility: hidden;
-            height: 100vh;
-            padding: 30px;
-            top: 0;
-            right: 0;
-            transition: all .2s ease;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            z-index: 1000;
-            animation: hide .2s ease;
-            /* transform-origin: right; */
-        }
-        ul.hide {
-            animation: show .2s ease !important;
-            visibility: visible !important;
-        }
-        #navbar img {
-            display: block;
-            padding: 3px 0 3px 0;
-        
-            width: 60px;
-        }
-        #navbar ul li a {
-            text-decoration: none;
-            color: white;
-            padding: 10px;
-        }
-        #navbar ul li {
-            transition: border .4s ease-in-out;
-        }
-        #navbar ul li:nth-child(1) {
-            display: none;
-        }
+        background: black;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        visibility: hidden;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        transition: all .2s ease;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        z-index: 1000;
+        animation: hide .2s ease;
+        transform-origin: right;
+    }
+    #navbar ul ul {
+        visibility: hidden;
+        background: white;
+        color: black;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1001;
+        margin-right: 0;
+    }
 
-        #navbar ul li:nth-child(3),
-        #navbar ul li:nth-child(2) {
-            background: none;
-            font-size: 1.2em;
-        }
-        #navbar ul li:nth-child(2) {
-            --order: 2;
-        }
-        #navbar ul li:nth-child(3) {
-            --order: 3;
-        }
-        
-        #menuTog {
-            z-index: 100000;
-            display: flex;
-            justify-content: center;
-            /* align-items: center; */
-            cursor: pointer;
-            flex-direction: column;
-            border: none;
-            outline: none;
-            width: 40px;
-            height: 55px;
-            background: transparent;
-            position: relative;
-            margin-left: auto;
-            /* box-sizing: border-box; */
-            transition: all .2s ease;
-            position:  fixed; 
-            right: 10px;
-        }
-         #menuTog span {
-            background: white;
-            height: 2px;
-            margin: 2px;
-            transition: all .2s ease;
+    ul.hide {
+        animation: show .2s ease !important;
+        visibility: visible !important;
+    }
 
-        }
-        #menuTog span:nth-child(1) {
-            width:  10px;
-        }
-         #menuTog span:nth-child(2) {
-            width: 20px;
-        }
-         #menuTog span:nth-child(3) {
-            width: 25px;  
-        }
-        #menuTog.active span:nth-child(2) {
-            transform: translateX(-50px);
-            background: transparent;
-            width: 25px;
-        }
-        #menuTog.active span:nth-child(1) {
-            transform: translateY(6px) rotate(45deg);
-            width: 25px;
-            background: !important black;
+    #navbar img {
+        display: block;
+        padding: 3px 0 3px 0;
+        width: 60px;
+    }
 
-        }
-        #menuTog.active span:nth-child(3) {
-            transform: translateY(-6px) rotate(-45deg);
-            /* background: !important black; */
-        }
+    #navbar ul ul li a {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+    }
+
+
+
+    #navbar ul > li {
+        display: none;
+    }
+
+    #navbar ul #navbar ul ul li:nth-child(3),
+    #navbar ul ul li:nth-child(2) {
+        background: none;
+        font-size: 1.2em;
+    }
+
+    #navbar ul ul li:nth-child(2) {
+        --order: 2;
+    }
+
+    #navbar ul lu li:nth-child(3) {
+        --order: 3;
+    }
+
+    #menuTog {
+        z-index: 100000;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        cursor: pointer;
+        flex-direction: column;
+        border: none;
+        outline: none;
+        width: 40px;
+        height: 55px;
+        background: transparent;
+        position: relative;
+        margin-left: auto;
+        /* box-sizing: border-box; */
+        transition: all .2s ease;
+        position: fixed;
+        right: 10px;
+    }
+
+    #menuTog span {
+        background: white;
+        height: 2px;
+        margin: 2px;
+        transition: all .2s ease;
+
+    }
+
+    #menuTog span:nth-child(1) {
+        width: 10px;
+    }
+
+    #menuTog span:nth-child(2) {
+        width: 20px;
+    }
+
+    #menuTog span:nth-child(3) {
+        width: 25px;
+    }
+    #menuTog.active span {
+        background: black;
+    }
+    #menuTog.active span:nth-child(2) {
+        transform: translateX(-50px);
+        background: transparent;
+        width: 25px;
+    }
+
+    #menuTog.active span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+        width: 25px;
+        background:  !important black;
+
+    }
+
+    #menuTog.active span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+        /* background: !important black; */
+    }
 
 }

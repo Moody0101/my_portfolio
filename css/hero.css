@@ -5,19 +5,19 @@
     height:  65vh;
 }
 .inner-section {
-    width: 100%;
+    width: 65%;
     /* background: cyan; */
     padding: 30px;
     height: 50vh;
     margin: 10px auto;
-}
 
+}
 .inner-section div {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: auto 0;
+    margin: 10px auto;
     box-sizing: border-box;
 }
 
@@ -29,7 +29,8 @@
 .inner-section div div {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
+    width: 50%;
+    margin: 0;
 }
 
 

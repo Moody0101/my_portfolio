@@ -19,10 +19,10 @@
 @keyframes show {
     0% {
         transform: scaleX(0);
-        
         background: white;
         color:  black;
     }
+
     100% {
         transform: scaleX(1);
     }

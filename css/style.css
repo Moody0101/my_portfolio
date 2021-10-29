@@ -30,7 +30,7 @@ required stylesheet, the media query also included.
 
 body {
     margin: auto auto;
-    max-width: 900px;
+    max-width: 1200px;
     font-family: sans-serif;
     display: flex;
     justify-content: space-between;
