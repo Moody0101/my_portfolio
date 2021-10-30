@@ -4,6 +4,24 @@
     /* background:  red; */
     height:  65vh;
 }
+a#talk {
+    background: white;
+    color: black;
+    height: 20px;
+    width:  100px;
+    padding:  10px;
+    border-radius:  10px;
+    cursor:  pointer;
+    border: 2px solid white;
+    transition: all .5s ease;
+}
+
+a#talk:hover {
+    background: black;
+    color:  white;
+    
+}
+
 .inner-section {
     width: 65%;
     /* background: cyan; */
@@ -98,11 +116,11 @@
 @media screen and (max-width: 500px) {
 
     .s1 {
-        height: 40vh;
+        height: 30vh;
         
     }
     .inner-section {
-     height: 35vh;
+     height: 30vh;
      width: 70%;
  
      display: flex;
@@ -118,11 +136,12 @@
 }
 @media screen and (max-width: 414px) {
     .s1 {
-        height: 50vh;
+        height: 40vh;
 
     }
     .inner-section {
-        height: 60vh;
+        height: 40vh;
         width: 100%;
     }
+    
 }

@@ -1,18 +1,25 @@
 footer {
-	width: 70vw;
-	height: 30px;
-	background: none;
-	color:  white;
-	text-align: center;
-	margin: 10px auto;
-	display: flex;
+	width: 600px;
+	margin: 30px auto;
+	margin-bottom:  0;
+	height: 300px;
+	display:  flex;
 	justify-content: center;
-	align-items: center;
-	border-radius: 10px;
-	border: 2px solid red;
+	/* border: 1px solid white; */
+	color:  white;
+	/* border-radius:  100px 100px 0 0; */
+	flex-direction: column;
 }
-@media screen and (min-width: 700px) {
- footer {
-	width:  200px;
-}
+footer div {
+		margin: 5px 30px;
+		background: white;
+		color: black;
+		padding: 10px;
+		border-radius:  3px;
+	}
+@media screen and (max-width: 768px)  {
+	footer {
+		width: 100%;
+	}
+	
 }

@@ -2,7 +2,7 @@
 this file contains the standars, and also import every 
 required stylesheet, the media query also included.
 */
-    
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('../js/frameworks/sal.js/dist/sal.css');
 @import 'nav.css';
 @import 'hero.css';
@@ -23,8 +23,10 @@ required stylesheet, the media query also included.
 }
 
 * {
+    scroll-behavior: smooth;
+    scroll-margin-top: 10px;
     box-sizing: border-box;
- font-family: "Myriad Pro", sans-serif;
+    font-family: "Poppins", "Myriad Pro", sans-serif;
     
 }
 

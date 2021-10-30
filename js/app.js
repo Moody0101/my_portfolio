@@ -11,14 +11,15 @@ const loading = document.getElementById("loading");
 const about = document.querySelectorAll("#about .text p span");
 const aboutimg = document.querySelectorAll("#about .text img");
 const workflow = document.getElementById("workflowIMG");
-
+const footerps = document.querySelectorAll("footer div")
 for(let i=0; i < containernodes.length; i++) {
     containernodes[i].style.display = "none";
 }
 const containers = [
 ...about,
 ...containernodes, 
-...aboutimg
+...aboutimg,
+...footerps
 ];
 for(let i=0; i < containers.length;i++) {
     containers[i].setAttribute('data-sal', "slide-down");

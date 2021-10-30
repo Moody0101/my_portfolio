@@ -1,6 +1,6 @@
    /* the skills section styling */
 body .skills {
-	margin: 10px auto;
+	margin: 50px auto;
 	padding:  10px;
 	border-radius:  10px;
 	background: var(--containers-color);
@@ -41,7 +41,7 @@ body .skills h4 {
 @media screen and (max-width: 700px) {
 	body .skills {
 		height: 350px;
-		width: 60vw;
+		width: 70vw;
 	}
 }
 
