@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+ 
+* {
+    scroll-behavior: smooth;
+    scroll-margin-top: 10px;
+    box-sizing: border-box;
+    font-family: "Poppins", "Myriad Pro", sans-serif;
+    
+}
+
+
+body {
+    margin: auto auto;
+    max-width: 1200px;
+    height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: black;
+    transition: all 1s linear;
+}
+body .artSection{
+	color: white;
+	width: 50vw;
+	height:  70vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	margin: 10px auto;
+	/* border: 1px white solid; */
+	padding:  10px;
+	border-radius:  10px;
+}
+
+body .artSection .innerArt {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	margin: auto auto;
+	width:  100%;
+	/* border:  1px yellow solid; */
+	padding:  10px;
+}
+body .artSection .innerArt img {
+	transition: all 1s ease;
+}
+body .artSection .innerArt img:nth-child(1),
+body .artSection .innerArt img:nth-child(3) {
+	opacity: .3;
+	width: 20%;
+}
+body .artSection .innerArt img:nth-child(1) {
+	animation: show1 6s infinite;
+}
+body .artSection .innerArt img:nth-child(3) {
+	animation: show2 6s infinite;
+	
+}
+body .artSection .innerArt img:nth-child(2) {
+	width: 100px;
+}
+
+body .artSection .innerArt img:nth-child(3):hover,
+body .artSection .innerArt img:nth-child(1):hover {
+	width: 100px;
+	opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+	body .artSection {
+		width: 90vw;
+		height: 50vh;
+	}
+	body .artSection .innerArt {
+	width:  100%;
+}
+}
+
+@keyframes show1 {
+	0% {
+		opacity: .3;
+		width: 20%;
+	}
+	25% {
+		opacity: .3;
+		width: 20%;	
+	}
+	50% {
+		width: 100px;
+		opacity: 1;
+	}
+	75% {
+		width: 100px;
+		opacity: 1;
+	}
+	100% {
+		opacity: .3;
+		width: 20%;
+	}
+}
+@keyframes show2 {
+	0% {
+		opacity: .3;
+		width: 20%;
+	}
+	25% {
+		width: 100px;
+		opacity: 1;
+	}
+	50% {
+		width: 100px;
+		opacity: 1;
+	}
+	75% {
+		opacity: .3;
+		width: 20%;
+	}
+	100% {
+		opacity: .3;
+		width: 20%;
+	}
+}

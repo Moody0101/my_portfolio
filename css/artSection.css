@@ -1,0 +1,67 @@
+ body .artSection{
+	color: white;
+	width: 50vw;
+	height:  70vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	margin: 10px auto;
+	/* border: 1px white solid; */
+	padding:  10px;
+	border-radius:  10px;
+}
+
+body .artSection .innerArt {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	margin: auto auto;
+	width:  100%;
+	/* border:  1px yellow solid; */
+	padding:  10px;
+}
+body .artSection .innerArt img {
+	transition: all 1s ease;
+}
+body .artSection .innerArt img:nth-child(1),
+body .artSection .innerArt img:nth-child(3) {
+	opacity: .3;
+	width: 20%;
+}
+body .artSection .innerArt img:nth-child(1) {
+		animation: show3 6s infinite;
+	}
+	body .artSection .innerArt img:nth-child(3) {
+		animation: show4 6s infinite;
+		
+	}
+
+body .artSection .innerArt img:nth-child(2) {
+	width: 100px;
+}
+
+body .artSection .innerArt img:nth-child(3):hover,
+body .artSection .innerArt img:nth-child(1):hover {
+	width: 100px;
+	opacity: 1;
+}
+
+
+@media screen and (max-width: 500px) {
+	body .artSection {
+		width: 90vw;
+		height: 50vh;
+	}
+	body .artSection .innerArt {
+	width:  100%;
+	}
+	body .artSection .innerArt img:nth-child(1) {
+		animation: show1 6s infinite;
+	}
+	body .artSection .innerArt img:nth-child(3) {
+		animation: show2 6s infinite;
+		
+	}
+}

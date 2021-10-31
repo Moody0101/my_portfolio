@@ -103,6 +103,7 @@ a {
         position: fixed;
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 100vw;
         visibility: hidden;
         height: 100vh;
@@ -116,16 +117,21 @@ a {
         animation: hide .2s ease;
         transform-origin: right;
     }
+    #navbar ul li:nth-child(1) img {
+        display: none;
+    }
     #navbar ul ul {
         visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: white;
         color: black;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        right: 0;
+        height: 100vh;
+        width: 100vw;
         z-index: 1001;
         margin-right: 0;
+        transform-origin: right;  
     }
 
     ul.hide {
@@ -143,12 +149,6 @@ a {
         text-decoration: none;
         color: black;
         padding: 10px;
-    }
-
-
-
-    #navbar ul > li {
-        display: none;
     }
 
     #navbar ul #navbar ul ul li:nth-child(3),

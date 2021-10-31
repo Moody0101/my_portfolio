@@ -62,3 +62,94 @@
         background-color: green;
     }
 }
+@keyframes show1 {
+    0% {
+        opacity: .3;
+        width: 20%;
+    }
+    25% {
+        opacity: .3;
+        width: 20%; 
+    }
+    50% {
+        width: 100px;
+        opacity: 1;
+    }
+    75% {
+        width: 100px;
+        opacity: 1;
+    }
+    100% {
+        opacity: .3;
+        width: 20%;
+    }
+}
+@keyframes show2 {
+    0% {
+        opacity: .3;
+        width: 20%;
+    }
+    25% {
+        width: 100px;
+        opacity: 1;
+    }
+    50% {
+        width: 100px;
+        opacity: 1;
+    }
+    75% {
+        opacity: .3;
+        width: 20%;
+    }
+    100% {
+        opacity: .3;
+        width: 20%;
+    }
+}
+
+
+/* scaling anime for desktop due to scale diffrences */
+@keyframes show3 {
+ 0% {
+        opacity: .3;
+        width: 100px;
+    }
+    25% {
+        opacity: .3;
+        width: 100px; 
+    }
+    50% {
+        width: 30%;
+        opacity: 1;
+    }
+    75% {
+        width: 30%;
+        opacity: 1;
+    }
+    100% {
+        opacity: .3;
+        width: 100px;
+    }   
+}
+@keyframes show4 {
+    0% {
+        opacity: .3;
+        width: 100px;
+    }
+    25% {
+        width: 30%;
+        opacity: 1;
+    }
+    50% {
+        width: 30;
+        opacity: 1;
+    }
+    75% {
+        opacity: .3;
+        width: 100px;
+    }
+    100% {
+        opacity: .3;
+        width: 100px;
+    }
+}
