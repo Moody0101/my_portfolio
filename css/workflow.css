@@ -1,6 +1,6 @@
 .workflow {
 	display: flex;
-	justify-content:  space-around;
+	justify-content:  space-between;
 	align-items: center;
 	margin: 50px auto;
 	width: 70vw;

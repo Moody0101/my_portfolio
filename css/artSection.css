@@ -1,11 +1,12 @@
  body .artSection{
 	color: white;
-	width: 50vw;
-	height:  70vh;
+	width: 80vh;
+	height:  80vh;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	flex-direction: column;
+	flex-direction: row;
 	margin: 10px auto;
 	/* border: 1px white solid; */
 	padding:  10px;
@@ -22,46 +23,58 @@ body .artSection .innerArt {
 	/* border:  1px yellow solid; */
 	padding:  10px;
 }
-body .artSection .innerArt img {
+body .artSection .innerRow {
+	display: block;
+		display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	margin: auto auto;
+	width:  60%;
+	/* border:  1px yellow solid; */
+	padding:  10px;
+}
+body .artSection .innerArt img, .innerRow img {
 	transition: all 1s ease;
+	margin: 0 20px;
 }
-body .artSection .innerArt img:nth-child(1),
-body .artSection .innerArt img:nth-child(3) {
-	opacity: .3;
-	width: 20%;
+body .artSection .innerArt img, .innerRow img{
+	width: 100px;
+	cursor: pointer;
 }
-body .artSection .innerArt img:nth-child(1) {
+
+body .artSection .innerArt img:hover, .innerRow img:hover {
+	width: 150px;
+}
+/* body .artSection .innerArt img:nth-child(1) {
 		animation: show3 6s infinite;
 	}
-	body .artSection .innerArt img:nth-child(3) {
+body .artSection .innerArt img:nth-child(3) {
 		animation: show4 6s infinite;
 		
-	}
+} */
 
-body .artSection .innerArt img:nth-child(2) {
-	width: 100px;
-}
 
-body .artSection .innerArt img:nth-child(3):hover,
-body .artSection .innerArt img:nth-child(1):hover {
-	width: 100px;
-	opacity: 1;
-}
+
 
 
 @media screen and (max-width: 500px) {
 	body .artSection {
-		width: 90vw;
-		height: 50vh;
+		width: 70vw;
+		height: 70vh;
+		margin: 30px auto;
 	}
 	body .artSection .innerArt {
 	width:  100%;
 	}
+	body .artSection .innerArt img, .innerRow img {
+		width: 30%;
+	}
 	body .artSection .innerArt img:nth-child(1) {
-		animation: show1 6s infinite;
+		/* animation: show1 6s infinite; */
 	}
 	body .artSection .innerArt img:nth-child(3) {
-		animation: show2 6s infinite;
-		
+		/* animation: show2 6s infinite; */
 	}
+
 }

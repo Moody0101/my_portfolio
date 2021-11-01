@@ -8,18 +8,23 @@ a#talk {
     background: white;
     color: black;
     height: 20px;
-    width:  100px;
-    padding:  10px;
+    width:  150px;
+    padding:  20px;
+    margin: 10px auto;
     border-radius:  10px;
     cursor:  pointer;
     border: 2px solid white;
     transition: all .5s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-weight: 600;
 }
 
 a#talk:hover {
     background: black;
     color:  white;
-    
 }
 
 .inner-section {

@@ -11,48 +11,40 @@ const loading = document.getElementById("loading");
 const about = document.querySelectorAll("#about .text p span");
 const aboutimg = document.querySelectorAll("#about .text img");
 const workflow = document.getElementById("workflowIMG");
-const footerps = document.querySelectorAll("footer div")
+const footparags = document.querySelectorAll("footer div")
 
 
 
 
 
-// const isInviewPort = (e) => {
-//     const rect = e.getBoundingClientRect();
-//     return (
-//         rect.top >= -130 &&
-//         rect.left >= 0 &&
-//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//         rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
-//         );
-// }
+const isInviewPort = (e) => {
+    const rect = e.getBoundingClientRect();
+    return (
+        rect.top >= -130 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
+        );
+}
 
 for(let i=0; i < containernodes.length; i++) {
     containernodes[i].style.display = "none";
 }
 const containers = [
-
 ...containernodes, 
-
-...footerps
+...footparags
 ];
-for(let i=0; i < containers.length;i++) {
-    var bounding = containers[i].getBoundingClientRect();
-    if (bounding.top >= 0 && bounding.left >= 0 && bounding.right <= window.innerWidth && bounding.bottom <= window.innerHeight) {
-        containers[i].setAttribute('data-sal', "slide-down");
-        // containers[i].setAttribute('data-sal-repeat', null);
-        containers[i].setAttribute('data-sal-delay', "500");
-        containers[i].setAttribute('data-sal-easing', "ease");
-    }
-          
+
+const temp = [containers[0], containers[1], ...footparags]
+
+for(let i=0; i < temp.length;i++) {    
+    temp[i].setAttribute('data-sal', "slide-down");
+    temp[i].setAttribute('data-sal-repeat', null);
+    temp[i].setAttribute('data-sal-delay', "500");
+    temp[i].setAttribute('data-sal-easing', "ease");      
 }
 
-// for(let i=0; i < footerps.length; i++){
-// footerps[i].setAttribute('data-sal', "slide-down");
-// footerps[i].setAttribute('data-sal-repeat', null);
-// footerps[i].setAttribute('data-sal-delay', "500");
-// footerps[i].setAttribute('data-sal-easing', "ease");
-// }
+
 
 sal({
     once: false,
