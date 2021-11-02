@@ -1,20 +1,31 @@
+.workflow h2 {
+	margin: 10px auto;
+	color:  white;
+
+}
+.h3 {
+	color: #6D5ECC;
+}
 .workflow {
-	display: flex;
-	justify-content:  space-between;
-	align-items: center;
-	margin: 50px auto;
-	width: 70vw;
+	display:  flex;
 	flex-direction: column;
-	/* background: red; */
-	padding: 10px;
+	justify-content: center;
+	width: 40vw;
+	margin: 30px auto;
 }
-.workflow h4 {
-	color:  #fff;
+.comps, .workflow div p {
+	color:  white;
+}
+.workflow div {
+	background:  #080808;
+	margin-top: 20px;
+	padding: 10px 20px;
+	border-radius: 10px;
 }
 
 
-@media screen and (min-width: 700px) {
- .workflow > #workflowIMG {
-	width:  500px;
+@media screen and (max-width: 800px) {
+	.workflow {
+		width: 70vw;
 	}
 }

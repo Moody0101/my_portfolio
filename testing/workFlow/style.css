@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+
+* {
+    scroll-behavior: smooth;
+    scroll-margin-top: 10px;
+    box-sizing: border-box;
+    font-family: "Poppins", "Myriad Pro", sans-serif;
+    
+}
+
+body {
+    margin: auto auto;
+    max-width: 1200px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: black;
+    transition: all 1s linear;
+}
+.workflow h2 {
+	margin: 10px auto;
+	color:  white;
+
+}
+.h3 {
+	color: #6D5ECC;
+}
+.workflow {
+	display:  flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 40vw;
+	margin: 30px auto;
+}
+.comps, .workflow div p {
+	color:  white;
+}
+.workflow div {
+	background:  #080808;
+	margin-top: 20px;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+	.workflow {
+		width: 70vw;
+	}
+}

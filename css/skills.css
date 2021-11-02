@@ -12,7 +12,7 @@ body .skills {
 	flex-direction: column;
 	transform-origin: top;
 }
-body .skills h4 {
+body .skills h3 {
 	align-self: center;
 	color:  white;
 }

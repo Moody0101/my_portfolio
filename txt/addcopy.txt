@@ -1,0 +1,14 @@
+workflow:
+	collecting information:
+		this step is basically a general analysis concerning the project's goals, purpose, or overall concepts in order to understand the themes that could fit the ideas from the starting point to finish.
+	prototyping:
+		making the boilerplate/assets, and identifying the tooling, languages, libraries, and frameworks to use based on the nature and theme of the project in hand.
+		also this phase is where to make the visual concepts, if it is a web/gui project, other than a cli project.
+	coding:
+		excitement starts in this phase in my opinion be cause I start really missing around and testing everthing I have prepared for, if I prepared well, then the debugging/coding would be a piece of cake. :)
+		this phase consists of components:
+			. code base organization
+			. code optimization
+			. debugging
+			. testing
+			. also, absolute frustration :)
