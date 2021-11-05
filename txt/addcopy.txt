@@ -12,3 +12,6 @@ workflow:
 			. debugging
 			. testing
 			. also, absolute frustration :)
+projects:
+	python:
+		

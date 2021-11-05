@@ -99,41 +99,44 @@ a {
 
 @media screen and (max-width: 789px) {
     #navbar ul {
-        background: black;
         position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100vw;
         visibility: hidden;
         height: 100vh;
+        align-items: center;
         top: 0;
         right: 0;
         transition: all .2s ease;
         flex-direction: column;
-        align-items: center;
         margin: 0;
         z-index: 1000;
         animation: hide .2s ease;
         transform-origin: right;
+        background: white;
+    }
+    #navbar  ul ~ li:nth-child(1) {
+        display: none;
+
     }
     #navbar ul li:nth-child(1) img {
         display: none;
     }
-    #navbar ul ul {
+    #navbar ul > ul {
+         width: 100vw;
+        height: 100vh;
         visibility: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
-        background: white;
-        color: black;
-        height: 100vh;
-        width: 100vw;
-        z-index: 1001;
-        margin-right: 0;
-        transform-origin: right;  
+        color: black;    
+        transform-origin: right; 
+        margin: auto auto; 
+        padding:  0;
+        margin:  0;
     }
-
+     #navbar ul > ul li {
+        
+     }
     ul.hide {
         animation: show .2s ease !important;
         visibility: visible !important;
