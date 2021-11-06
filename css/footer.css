@@ -10,13 +10,32 @@ footer {
 	/* border-radius:  100px 100px 0 0; */
 	flex-direction: column;
 }
-footer div {
+footer div:nth-child(1),
+footer div:nth-child(2) {
 		margin: 5px 30px;
 		background: white;
 		color: black;
 		padding: 10px;
 		border-radius:  3px;
-	}
+}
+footer div:nth-child(3) {
+		margin: 5px 30px;
+		background: transparent;
+		color: black;
+		padding: 10px;
+		border-radius:  3px;
+}
+footer div a {
+	margin: 0 10px;
+}
+footer div a svg{
+	width: 20px;
+	color: white;
+	transition: all 1s ease-in-out;
+}
+footer div a svg:hover {
+	color: #FFFF00;
+}
 @media screen and (max-width: 768px)  {
 	footer {
 		width: 100%;
