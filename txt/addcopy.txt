@@ -1,17 +1,46 @@
 workflow:
-	collecting information:
-		this step is basically a general analysis concerning the project's goals, purpose, or overall concepts in order to understand the themes that could fit the ideas from the starting point to finish.
-	prototyping:
-		making the boilerplate/assets, and identifying the tooling, languages, libraries, and frameworks to use based on the nature and theme of the project in hand.
-		also this phase is where to make the visual concepts, if it is a web/gui project, other than a cli project.
-	coding:
-		excitement starts in this phase in my opinion be cause I start really missing around and testing everthing I have prepared for, if I prepared well, then the debugging/coding would be a piece of cake. :)
-		this phase consists of components:
-			. code base organization
-			. code optimization
-			. debugging
-			. testing
-			. also, absolute frustration :)
-projects:
-	python:
-		
+	add-copy:
+		collecting information:
+			this step is basically a general analysis concerning the project's goals, purpose, or overall concepts in order to understand the themes that could fit the ideas from the starting point to finish.
+		prototyping:
+			making the boilerplate/assets, and identifying the tooling, languages, libraries, and frameworks to use based on the nature and theme of the project in hand.
+			also this phase is where to make the visual concepts, if it is a web/gui project, other than a cli project.
+		coding:
+			excitement starts in this phase in my opinion be cause I start really missing around and testing everthing I have prepared for, if I prepared well, then the debugging/coding would be a piece of cake. :)
+			this phase consists of components:
+				. code base organization
+				. code optimization
+				. debugging
+				. testing
+				. also, absolute frustration :)
+Work:
+	
+
+	visual-structure:
+		a grid of 3 columns, but rows not defined.
+		[ ] | [ ] | [ ]
+	text-structure:	
+		for every column there would be:
+			H3 Title:
+				p paragraph:
+			utility graphics ex: python/html......
+			Link
+	add-copy:
+		Mooshell
+			a python based shell to make the command line more beatiful,
+			using colors, also more effecient using python powerful utility libraries like os, subprocess and also sys.
+		used technology: [Python] | [json]
+		link: (https://github.com/Moody0101/mooshell)
+		Database
+			a python database using base64 to store data as encrypted and also uses sha256 to encrypt the password so no one can view you data.
+		used technology: [Python] | [json]
+		link: (https://github.com/Moody0101/pythondDB2)
+		Python0101
+			this is one of the things I am proud of, because this repo holds alot of the things that I liked and did using python, everyone would like this repo due to its versatility,
+			you can check it out to know what I can do using python.
+		used technology: [Python]
+		link: (https://github.com/Moody0101/python0101)
+		YoutubeDownloader
+			a python script and GUI to download data from youtube api using pafy library and youtube-dl.
+		used technology: [Python]
+		link: (https://github.com/Moody0101/youtubeDownloader)
