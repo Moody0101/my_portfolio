@@ -8,7 +8,6 @@
 	align-items: center;
 	flex-direction: row;
 	margin: 10px auto;
-	/* border: 1px white solid; */
 	padding:  10px;
 	border-radius:  10px;
 }
@@ -62,7 +61,7 @@ body .artSection .innerArt img:nth-child(3) {
 	body .artSection {
 		width: 70vw;
 		height: 70vh;
-		margin: 30px auto;
+		margin: 10px auto;
 	}
 	body .artSection .innerArt {
 	width:  100%;

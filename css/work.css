@@ -1,29 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
 * {
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    font-family: "Poppins", "Myriad Pro", sans-serif;
-    
+	box-sizing: border-box;
 }
-
-body {
-    margin: auto auto;
-    max-width: 1200px;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: black;
-    transition: all 1s linear;
-}
-body h2 {
-	color:  white;
-	border:1px solid white;
+.workHeader {
+	color: white;
+	margin: auto auto;
 }
 .work {
-	
+	margin: auto auto;
 	color:  white;
     transition: all 1s linear;
 	/* background:  #1e211d; */
@@ -43,7 +26,7 @@ body h2 {
 
 .work div h3 {
 	width: 50%;
-	margin:  10px auto;
+	margin:  10px 10px;
 	height: 30px;
 	color:  #6D5ECC;
 	padding: 4px;
@@ -51,7 +34,6 @@ body h2 {
 .work div p {
 	width: 100%;
 	margin:  20px 10px;
-	height: 70%;
 	padding: 4px;
 }
 .work div p::selection {
@@ -87,17 +69,21 @@ body h2 {
 	.work {
 		width: 100%;
 	}
+	
+	.work > div p {
+		height: none;
+	}
 }
 @media screen and (max-width: 805px) {
 	.work {
-		width: 70%;
-		height: 160vh;
+		width: 70vw;
+		height: 130vh;
 		flex-direction: column;
-		justify-content: space-around;	
+		justify-content: space-between;	
 	}
 	.work > div {
-		width: 90%;
-		height: 250px;
+		width: 70vw;
+		height: 200px;
 	}
 	.work > div:nth-child(3) {
 		height: 280px;

@@ -13,7 +13,7 @@ required stylesheet, the media query also included.
 @import 'workflow.css';
 @import 'footer.css';
 @import 'artSection.css';
-
+@import 'work.css';
 
 :root {
     --dark: black;

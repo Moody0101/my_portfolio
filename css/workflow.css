@@ -1,31 +1,48 @@
-.workflow h2 {
+.workflowHeader{
+	color: white;
 	margin: 10px auto;
-	color:  white;
-
 }
 .h3 {
 	color: #6D5ECC;
 }
 .workflow {
 	display:  flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 40vw;
+	flex-direction: row;
+	justify-content: space-between;
+	width:  80%;
+	height: 350px;
 	margin: 30px auto;
+	margin: 10px auto;
 }
-.comps, .workflow div p {
+
+.workflow div p {
 	color:  white;
 }
 .workflow div {
-	background:  #080808;
-	margin-top: 20px;
-	padding: 10px 20px;
-	border-radius: 10px;
+	width: 30%;
+    height: 280px;
+    margin:  5px 10px;
+	background:  transparent;
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 	.workflow {
-		width: 70vw;
+		width: 60vw;
+		height: 120vh;
+		flex-direction: column;
+		justify-content: space-between;
+		
+	}
+	.workflow div  {
+		width: 90%;
+    margin:  5px 10px;
+		height: 300px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.workflow {
+		width: 90vw;
+		height: 100vh;
 	}
 }

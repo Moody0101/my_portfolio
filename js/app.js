@@ -14,9 +14,6 @@ const workflow = document.getElementById("workflowIMG");
 const footparags = document.querySelectorAll("footer div")
 
 
-
-
-
 const isInviewPort = (e) => {
     const rect = e.getBoundingClientRect();
     return (
