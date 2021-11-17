@@ -94,9 +94,17 @@ a#talk:hover {
 }
 
 
+@media screen and (max-width: 1000px)  {
+   .s1 {
+        height: 70vh;
+        
+    }
+ 
+}
+
 @media screen and (max-width: 768px) {
     .s1 {
-        height: 40vh;
+        height: 50vh;
         
     }
 

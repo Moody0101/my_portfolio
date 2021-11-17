@@ -33,7 +33,7 @@
 }
 .work div p {
 	width: 100%;
-	margin:  20px 10px;
+	margin:  10px 10px;
 	padding: 4px;
 }
 .work div p::selection {
@@ -45,7 +45,7 @@
     color: black;
   	width: 90px;
 	height: 30px;
-	margin:  10px;
+	margin-left:  10px;
 	padding: 2px 20px;
     border-radius:  10px;
     cursor:  pointer;
@@ -77,7 +77,7 @@
 @media screen and (max-width: 805px) {
 	.work {
 		width: 70vw;
-		height: 130vh;
+		height: 110vh;
 		flex-direction: column;
 		justify-content: space-between;	
 	}

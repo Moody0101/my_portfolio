@@ -8,14 +8,9 @@ workflow:
 		coding:
 			excitement starts in this phase in my opinion be cause I start really missing around and testing everthing I have prepared for, if I prepared well, then the debugging/coding would be a piece of cake. :)
 			this phase consists of components:
-				. code base organization
-				. code optimization
-				. debugging
-				. testing
-				. also, absolute frustration :)
+		(=> DONE <=)
 Work:
 	
-
 	visual-structure:
 		a grid of 3 columns, but rows not defined.
 		[ ] | [ ] | [ ]
@@ -44,3 +39,5 @@ Work:
 			a python script and GUI to download data from youtube api using pafy library and youtube-dl.
 		used technology: [Python]
 		link: (https://github.com/Moody0101/youtubeDownloader)
+		
+		(=> DONE <=)

@@ -6,12 +6,13 @@
 	color: #6D5ECC;
 }
 .workflow {
+	/* border: .3px dashed yellow; */
 	display:  flex;
 	flex-direction: row;
 	justify-content: space-between;
 	width:  80%;
-	height: 350px;
-	margin: 30px auto;
+	padding:  10px;
+	height: 320px;
 	margin: 10px auto;
 }
 
@@ -36,13 +37,22 @@
 	}
 	.workflow div  {
 		width: 90%;
-    margin:  5px 10px;
+    	margin:  5px 10px;
 		height: 300px;
 	}
 }
 @media screen and (max-width: 500px) {
 	.workflow {
-		width: 90vw;
+		/* border: .3px dashed yellow; */
+		width: 80vw;
 		height: 100vh;
+		display:  flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.workflow > div {
+		/* border: .3px dashed red; */
+
 	}
 }

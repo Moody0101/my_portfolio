@@ -13,5 +13,4 @@ function copy(container, i) {
     copbtt[i].style.background = "white";
     copbtt[i].style.color = "black";
 
-    /* Alert the copied text */
 }
