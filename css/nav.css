@@ -31,6 +31,7 @@
     margin-right: auto;
     height: 30px;
     display: none;
+    animation: GrowALL .2s ease-in-out;
 }
 
 a {
@@ -70,6 +71,7 @@ a {
 
 #navbar ul li:nth-child(1) img {
     height: 30px;
+    animation: GrowALL .2s ease-in-out;
     margin-left: auto;
 }
 
@@ -193,7 +195,7 @@ a {
         height: 2px;
         margin: 2px;
         transition: all .2s ease;
-
+        animation: GrowInWidth 1.5s linear;
     }
 
     #menuTog span:nth-child(1) {

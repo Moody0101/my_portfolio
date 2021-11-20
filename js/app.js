@@ -1,4 +1,6 @@
 
+const projects = document.querySelectorAll(".work div");
+const Workdivs = document.querySelectorAll(".workflow div");
 const button = document.getElementById("menuTog");
 const bar = document.getElementById('menu');
 const nav = document.querySelector('#navbar ul');
@@ -13,6 +15,7 @@ const aboutimg = document.querySelectorAll("#about .text img");
 const workflow = document.getElementById("workflowIMG");
 const footparags = document.querySelectorAll("footer div");
 const anchors = document.getElementsByClassName("anchors");
+
 
 const isInviewPort = (e) => {
     const rect = e.getBoundingClientRect();
@@ -32,9 +35,10 @@ const containers = [
 ...footparags
 ];
 
-const temp = [containers[0], containers[1], ...footparags]
+const temp = [...paragraphs, ...projects, ...Workdivs, ...footparags]
 
 for(let i=0; i < temp.length;i++) {    
+    // ScrollReveal().reveal(temp[i])
     temp[i].setAttribute('data-sal', "slide-down");
     temp[i].setAttribute('data-sal-repeat', null);
     temp[i].setAttribute('data-sal-delay', "500");
