@@ -53,10 +53,25 @@ body .artSection .innerArt img:nth-child(3) {
 		
 } */
 
-
-
-
-
+.seemore  {
+   width: 150px;
+   padding:  20px;
+   margin: 10px auto; 
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   background: white;
+   color: black;
+   border-radius: 4px;
+   transition: all .4s ease;
+   border: 1px solid black;
+}
+.seemore:hover {
+	   background: black;
+   color:  white;
+   border: 1px solid white;
+}
 @media screen and (max-width: 500px) {
 	body .artSection {
 		width: 70vw;
